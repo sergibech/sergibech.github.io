@@ -1,7 +1,7 @@
 /*Barra de navegacio superior*/
 #header {
     height: 600px;
-    background-image: url('image6.jpg');
+    background-image: url('../img/image6.jpg');
     background-repeat: no-repeat;
     background-size: 1920px 600px;
 }
@@ -194,13 +194,13 @@ form.example::after {
 }
 
 #facebook:hover {
-	content: url("image6.jpg");
+	content: url("../img/image6.jpg");
 }
 #twitter:hover {
-	content: url("image6.jpg");
+	content: url("../img/image6.jpg");
 }
 #instagram:hover {
-	content: url("image6.jpg");
+	content: url("../img/image6.jpg");
 }
             
 .page-footer {
