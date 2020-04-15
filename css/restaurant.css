@@ -1,0 +1,61 @@
+/* Informacio restaurant */
+.no-padding { /*Aquest tambe afecta a alguns altres com la navbar de tipus de menjar*/
+	padding: 0;
+}
+/*Fi informacio restaurant*/
+
+#nil {
+	background: red;
+}
+#ballus {
+	background: green;
+}
+/*Fi Informació restaurant */
+
+/*Barra tipus menu */
+#barra {
+    background: grey;
+}
+
+#opcions-menu {
+	flex: auto;
+	justify-content: space-between;
+}
+/*Fi barra tipus menu*/
+
+/*Footer*/
+#peu {
+	margin-top: 0px;
+	margin-left: 12.75%;
+	margin-bottom: 5px;
+	padding: 0;
+}
+
+.vertical a {
+	display: block;
+}
+
+#facebook:hover {
+	content: url("../img/image6.jpg");
+}
+#twitter:hover {
+	content: url("../img/image6.jpg");
+}
+#instagram:hover {
+	content: url("../img/image6.jpg");
+}
+            
+.page-footer {
+    background-color: #222;
+    color: #ccc;
+	padding: 18px 0 30px;
+}
+.page-footer h1 {
+	font-size: 20px; 
+}
+
+.footer-copyright {
+    color: #666;
+	padding-top: 10px;
+}
+/*Fi footer*/
