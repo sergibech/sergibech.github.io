@@ -1,12 +1,38 @@
 #comanda {
   background: green;
-  padding: 10;
 }
 #pagament {
   background: blue;
-  padding: 10;
 }
 
+#comida {
+  margin-top: 1%;
+}
+
+#cantidad {
+  margin-top: 1%;
+  text-align: center;
+}
+
+#btnvisa {
+  width: 100px;
+}
+
+#btnmaster {
+  width: 100px;
+}
+
+#btnapple {
+  width: 100px;
+}
+
+#btngoogle {
+  width: 100px;
+}
+
+#btnpagar {
+  margin-top: 2%;
+}
 /*Footer*/
 #peu {
   margin-top: 0px;
@@ -43,3 +69,4 @@
   padding-top: 10px;
 }
 /*Fi footer*/
+

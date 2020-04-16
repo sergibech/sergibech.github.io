@@ -9,7 +9,7 @@
 /*Fi entrada dades d'entrega i pagament*/
 
 
-
+$('.datepicker').datepicker();
 /*Botó pagar*/
 
 function pagar() {
