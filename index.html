@@ -12,26 +12,40 @@
 </head>
 
 <body>
-<div id="header">
-    <div class="logo">
-        <a href=""><img src="img/logo.png" width="50px" height= "50px">Click And Eat</a>
+<div id="imatge-fons">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-6">
+                <img src="img/logo.png" width="50px" height="50px" alt="imatge"> Click and Eat
+            </div>
+            <div class="col-lg-10 col-md-10 col-sm-6">
+                <nav class="navbar navbar-expand-lg">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">A</span>
+                    </button>
+                    <div class="collapse navbar-collapse text-center" id="navbarSupportedContent2">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Mi pedido <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Gestionar mis pedidos</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#"> Registrarse o iniciar sesión<span class="sr-only">(current)</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
     </div>
-    <div class="topnav" id="myTopnav">
-    <a href="#">Registrarse o iniciar sesión</a>
-        <a href="#">Gestionar mis pedidos</a>
-        <a href="#">Mi pedido</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
+    <div class="input-group md-form form-sm form-2 pl-0" id="nil">
+        <input class="form-control my-0 py-1 lime-border" type="text" placeholder="Introduce tu ciudad" aria-label="Search" style="height: 100%; margin-right: 2%">
+        <div class="input-group-append">
+            <button class="btn blue-gradient btn-rounded btn-sm my-0" type="submit">Buscar</button>
+        </div>
     </div>
-	<div class="box">
-		<h1>Tu comida saludable en un solo click</h1>
-		<!-- The form -->
-		<form class="example" action="search.html">
-			<input type="text" placeholder="Introduce tu ciudad para encontrar restaurantes" name="ciudad">
-			<button type="submit">Buscar</button>
-		</form>
-	</div>
 </div>
 
 <div class="container features">
