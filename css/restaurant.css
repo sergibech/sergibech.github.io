@@ -23,6 +23,18 @@
 }
 /*Fi barra tipus menu*/
 
+/* Llista plats*/
+#naials {
+	text-align: left;
+}
+/*Fi Llista plats*/
+
+/*Icones + -*/
+h2 {
+	font-size: 16px;
+}
+/*Fi icones + -*/
+
 /*Footer*/
 #peu {
 	margin-top: 0px;

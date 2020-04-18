@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css\restaurant.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+
+
 </head>
 
 <body>
@@ -32,31 +36,64 @@
 				</div>
 				<div class="container-fluid col-lg-4 col-md-4 col-sm-12" id="horaris-restaurant">
 					<div class="row">
-						<div class="col-lg-6 col-md-6 col-sm-6">
-								<p>Disponibilidad</p>
-						</div>
-						<div class="col-lg-6 col-md-6 col-sm-6">
-								<p>Abierto</p>
+						<div class="col-lg-12 col-md-12 col-sm-12">
+								<h2>Disponibilidad</h2>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-lg-6 col-md-6 col-sm-6">
-							<p>Lunes</p>
-							<p>Martes</p>
-							<p>Miércoles</p>
-							<p>Jueves</p>
-							<p>Viernes</p>
-							<p>Sábado</p>
-							<p>Domingo</p>
+							<span>Lunes</span>
 						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 text-right">
+							<span>9.00h-23.00h</span>
+						</div>
+					</div>
+					<div class="row">
 						<div class="col-lg-6 col-md-6 col-sm-6">
-							<p>9.00h-23.00h</p>
-							<p>9.00h-23.00h</p>
-							<p>9.00h-23.00h</p>
-							<p>9.00h-23.00h</p>
-							<p>9.00h-23.00h</p>
-							<p>9.00h-23.00h</p>
-							<p>9.00h-23.00h</p>
+							<span>Martes</span>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 text-right">
+							<span>9.00h-23.00h</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-6">
+							<span>Miércoles</span>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 text-right">
+							<span>9.00h-23.00h</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-6">
+							<span>Jueves</span>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 text-right">
+							<span>9.00h-23.00h</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-6">
+							<span>Viernes</span>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 text-right">
+							<span>9.00h-23.00h</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-6">
+							<span>Sábado</span>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 text-right">
+							<span>9.00h-23.00h</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-6">
+							<span>Domingo</span>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 text-right">
+							<span>9.00h-23.00h</span>
 						</div>
 					</div>
 				</div>	
@@ -70,7 +107,7 @@
 
 <div class="container-fluid">
     <div class="row">
-		<div class="col-lg-7 col-md-7 col-sm-12 no-padding" id="nil">
+		<div class="col-lg-9 col-md-9 col-sm-12 no-padding" id="nil">
 			<nav class="navbar navbar-expand-lg" id="barra">
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon">A</span>
@@ -98,90 +135,236 @@
 					</ul>
 				</div>
 			</nav>
-			<div class="container-fluid">
+			
+			<div class="container-fluid plat">
 				<div class="row">
-					<div class="col-lg-12 col-md-12 col-sm-12">
-						<h1>Tipus 1</h1>
-					</div>
+					<h1>Macarrons amb tomàquet - 8,35€</h1>
 				</div>
 				<div class="row">
-					<div class="col-lg-4 col-md-4 col-sm-12">
-						<div>
-							<h2>Restaurant 1</h2>
-							<img class="img-fluid" src="img/restaurant1.png" alt="foto restaurante"/>
-							<p>Restaurante muy bueno</p>
+					<div class="col-lg-3 col-md-3 col-sm-12" style="background: green">
+						<img class="img-fluid" src="img/italiana.png" alt="foto restaurante"/>
+						<p>Macarrons deliciosos fets amb els tomàquets de l'hort de l'Hortència</p>
+					</div>
+					<div class="container-fluid col-lg-6 col-md-6 col-sm-12" style="background: yellow">
+						<div class="row">
+							<div class="col-lg-6 col-md-6 col-sm-6" style="background: orange">
+								<h2>Ingredients</h2>
+								<p id="desc-ingredients">Pasta, oli, sal, tomàquet, moltes ganes i amor.</p>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-6" style="background: grey">
+								<h2>Incompatibilitats</h2>
+								<ul>
+									<li>Vegans</li>
+									<li>Intolerants a la lactosa</li>
+									<li>Celíacs</li>
+								</ul>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12">
+								<h2 id="añadir">Añadir versión normal al pedido</h2>
+								<div style="text-align: center">
+									<input type="image" alt="quitar" src="img/menys.png" style="height: auto; width: 10%; vertical-align: middle;">
+									<span style="vertical-align: middle;">0</span>
+									<input type="image" alt="añadir" src="img/mes.png" style="height: auto; width: 10%; vertical-align: middle;">
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-4 col-sm-12">
-						<div>
-							<h2>Restaurant 2</h2>
-							<img class="img-fluid" src="img/restaurant1.png" alt="foto restaurante"/>
-							<p>Restaurante muy bueno</p>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-12">
-						<div>
-							<h2>Restaurant 3</h2>
-							<img class="img-fluid" src="img/restaurant1.png" alt="foto restaurante"/>
-							<p>Restaurante muy bueno</p>
-						</div>
+					<div class="col-lg-3 col-md-3 col-sm-12" style="background: red">
+						<h2>Versión del plato</h2>
+							<form>
+								
+								<input type="radio" name="tipus" id="normal" class="radiogroup" value="normal" checked="checked" ingredients="Pasta, oli, sal, tomàquet, moltes ganes i amor." titol="Añadir versión normal al pedido">
+								<label for="normal">Normal</label><br>
+								<input type="radio" name="tipus" id="vegana" class="radiogroup" value="vegana" ingredients="Opció vegana: Pasta, oli, sal, tomàquet, moltes ganes i amor." titol="Añadir versión vegana al pedido">
+								<label for="vegana">Vegana</label><br>
+								<input type="radio" name="tipus" id="celiaca" class="radiogroup" value="celiaca" ingredients="Opción celíaca: Pasta, oli, sal, tomàquet, moltes ganes i amor." titol="Añadir versión celíaca al pedido">
+								<label for="celiaca">Celíaca</label><br>
+								<input type="radio" name="tipus" id="intolerante" class="radiogroup" value="intolerante" ingredients="Intolerante: Pasta, oli, sal, tomàquet, moltes ganes i amor." titol="Añadir versión intolerante lactosa al pedido">
+								<label for="intolerante">Intolerante a la lactosa</label><br>
+							</form>
+						
+						
 					</div>
 				</div>
+			</div>
+			<div class="container-fluid plat">
 				<div class="row">
-					<div class="col-lg-4 col-md-4 col-sm-12">
-						<div>
-							<h2>Restaurant 4</h2>
-							<img class="img-fluid" src="img/restaurant1.png" alt="foto restaurante"/>
-							<p>Restaurante muy bueno</p>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-12">
-						<div>
-							<h2>Restaurant 5</h2>
-							<img class="img-fluid" src="img/restaurant1.png" alt="foto restaurante"/>
-							<p>Restaurante muy bueno</p>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-12">
-						<div>
-							<h2>Restaurant 6</h2>
-							<img class="img-fluid" src="img/restaurant1.png" alt="foto restaurante"/>
-							<p>Restaurante muy bueno</p>
-						</div>
-					</div>
+					<h1>Col confitada - 8,35€</h1>
 				</div>
 				<div class="row">
-					<div class="col-lg-4 col-md-4 col-sm-12">
-						<div>
-							<h2>Restaurant 7</h2>
-							<img class="img-fluid" src="img/restaurant1.png" alt="foto restaurante"/>
-							<p>Restaurante muy bueno</p>
+					<div class="col-lg-3 col-md-3 col-sm-12" style="background: green">
+						<img class="img-fluid" src="img/italiana.png" alt="foto restaurante"/>
+						<p>Col amb ceba bonissima</p>
+					</div>
+					<div class="container-fluid col-lg-6 col-md-6 col-sm-12" style="background: yellow">
+						<div class="row">
+							<div class="col-lg-6 col-md-6 col-sm-6" style="background: orange">
+								<h2>Ingredients</h2>
+								<p id="desc-ingredients2">Pasta, oli, sal, tomàquet, moltes ganes i amor.</p>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-6" style="background: grey">
+								<h2>Incompatibilitats</h2>
+								<ul>
+									<li>Vegans</li>
+									<li>Intolerants a la lactosa</li>
+									<li>Celíacs</li>
+								</ul>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12">
+								<h2 id="añadir2">Añadir versión normal al pedido</h2>
+								<div style="text-align: center">
+									<input type="image" alt="quitar" src="img/menys.png" style="height: auto; width: 10%; vertical-align: middle;">
+									<span style="vertical-align: middle;">0</span>
+									<input type="image" alt="añadir" src="img/mes.png" style="height: auto; width: 10%; vertical-align: middle;">
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-4 col-sm-12">
-						<div>
-							<h2>Restaurant 8</h2>
-							<img class="img-fluid" src="img/restaurant1.png" alt="foto restaurante"/>
-							<p>Restaurante muy bueno</p>
+					<div class="col-lg-3 col-md-3 col-sm-12" style="background: red">
+						<h2>Versión del plato</h2>
+							<form>
+								
+								<input type="radio" name="tipus" id="normal2" class="radiogroup2" value="normal" checked="checked" ingredients="Pasta, oli, sal, tomàquet, moltes ganes i amor." titol="Añadir versión normal al pedido">
+								<label for="normal2">Normal</label><br>
+								<input type="radio" name="tipus" id="vegana2" class="radiogroup2" value="vegana" ingredients="Opció vegana: Pasta, oli, sal, tomàquet, moltes ganes i amor." titol="Añadir versión vegana al pedido">
+								<label for="vegana2">Vegana</label><br>
+								<input type="radio" name="tipus" id="celiaca2" class="radiogroup2" value="celiaca" ingredients="Opción celíaca: Pasta, oli, sal, tomàquet, moltes ganes i amor." titol="Añadir versión celíaca al pedido">
+								<label for="celiaca2">Celíaca</label><br>
+								<input type="radio" name="tipus" id="intolerante2" class="radiogroup2" value="intolerante" ingredients="Intolerante: Pasta, oli, sal, tomàquet, moltes ganes i amor." titol="Añadir versión intolerante lactosa al pedido">
+								<label for="intolerante2">Intolerante a la lactosa</label><br>
+							</form>
+						
+						
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid plat">
+				<div class="row">
+					<h1>Patates emmascarades - 8,35€</h1>
+				</div>
+				<div class="row">
+					<div class="col-lg-3 col-md-3 col-sm-12" style="background: green">
+						<img class="img-fluid" src="img/italiana.png" alt="foto restaurante"/>
+						<p>Patates emmascarades del Berguedà</p>
+					</div>
+					<div class="container-fluid col-lg-6 col-md-6 col-sm-12" style="background: yellow">
+						<div class="row">
+							<div class="col-lg-6 col-md-6 col-sm-6" style="background: orange">
+								<h2>Ingredients</h2>
+								<p id="desc-ingredients3">Pasta, oli, sal, tomàquet, moltes ganes i amor.</p>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-6" style="background: grey">
+								<h2>Incompatibilitats</h2>
+								<ul>
+									<li>Vegans</li>
+									<li>Intolerants a la lactosa</li>
+									<li>Celíacs</li>
+								</ul>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12">
+								<h2 id="añadir3">Añadir versión normal al pedido</h2>
+								<div style="text-align: center">
+									<input type="image" alt="quitar" src="img/menys.png" style="height: auto; width: 10%; vertical-align: middle;">
+									<span style="vertical-align: middle;">0</span>
+									<input type="image" alt="añadir" src="img/mes.png" style="height: auto; width: 10%; vertical-align: middle;">
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-4 col-sm-12">
-						<div>
-							<h2>Restaurant 9</h2>
-							<img class="img-fluid" src="img/restaurant1.png" alt="foto restaurante"/>
-							<p>Restaurante muy bueno</p>
-						</div>
+					<div class="col-lg-3 col-md-3 col-sm-12" style="background: red">
+						<h2>Versión del plato</h2>
+							<form>
+								
+								<input type="radio" name="tipus" id="normal3" class="radiogroup3" value="normal" checked="checked" ingredients="Pasta, oli, sal, tomàquet, moltes ganes i amor." titol="Añadir versión normal al pedido">
+								<label for="normal3">Normal</label><br>
+								<input type="radio" name="tipus" id="vegana3" class="radiogroup3" value="vegana" ingredients="Opció vegana: Pasta, oli, sal, tomàquet, moltes ganes i amor." titol="Añadir versión vegana al pedido">
+								<label for="vegana3">Vegana</label><br>
+								<input type="radio" name="tipus" id="celiaca3" class="radiogroup3" value="celiaca" ingredients="Opción celíaca: Pasta, oli, sal, tomàquet, moltes ganes i amor." titol="Añadir versión celíaca al pedido">
+								<label for="celiaca3">Celíaca</label><br>
+								<input type="radio" name="tipus" id="intolerante3" class="radiogroup3" value="intolerante" ingredients="Intolerante: Pasta, oli, sal, tomàquet, moltes ganes i amor." titol="Añadir versión intolerante lactosa al pedido">
+								<label for="intolerante3">Intolerante a la lactosa</label><br>
+							</form>
+						
+						
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="col-lg-5 col-md-5 col-sm-12" id="ballus">
-			<p>Nil</p>
+		<div class="col-lg-3 col-md-3 col-sm-12" id="ballus">
+			<h1>Mi pedido</h1>
+			<div class="container-fluid plat">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-4">
+						<h2>Artículo</h2>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 text-center">
+						<h2>Unidades</h2>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 text-right">
+						<h2>Precio</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-4">
+						<span>Macarrons de la iaia</span>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 text-center">
+						<span>5</span>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 text-right">
+						<span>8,36€</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-4">
+						<span>Fanta de naranja</span>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 text-center">
+						<span>4</span>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 text-right">
+						<span>1,85€</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-4">
+						<span>Flan de huevo</span>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 text-center">
+						<span>3</span>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 text-right">
+						<span>2,35€</span>
+					</div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-lg-8 col-md-8 col-sm-8">
+						<span>Precio total</span>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 text-right">
+						<span>20,54€</span>
+					</div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 text-right">
+						<button type="button" class="btn btn-outline-primary">Pagar</button>
+					</div>
+				</div>
+			</div>
 		</div>
     </div>
 </div>
-
-
 
 <footer class="page-footer">
 <div class="container" id="peu">
