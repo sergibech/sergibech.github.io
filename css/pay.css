@@ -1,6 +1,38 @@
+:root{
+  --primary-color: #7caba1;
+  --primary-light-color:#d3f2e9;
+  --primary-dark-color:#0a7b79;
+  --secondary-color:#f4a363;
+  --secondary-light-color:#ffff52;
+  --secondary-dark-color:#c7a500;
+  --primary-text-color:#000000;
+  --secondary-text-color:#000000;
+  --error-color: #db767d;
+}
+
+h1#foo  {
+    color: var(--primary-color);
+}
+
 #btnpagar {
   margin-top: 2%;
   margin-bottom: 2%;
+  background: var(--secondary-light-color);
+  color: var(--secondary-text-color);
+  border-color: var(--secondary-dark-color);
+}
+
+#req_dadesTargeta{
+ background: var(--secondary-dark-color);
+}
+
+#dadesTargeta{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  background: var(--secondary-color);
+  text-align: center;
+  padding-right: 30%;
+  padding-left: 30%;
 }
 
 /*Footer*/
