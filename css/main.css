@@ -1,24 +1,154 @@
-/*Barra de navegacio superior*/
+
+:root {
+    --primaryColor: #CCFF90;
+    --secondaryColor: #FFD740;
+    --sans-serif: Verdana, Geneva, sans-serif;
+    --serif: Georgia, serif;
+}
+.no-space {
+    margin: 0;
+    padding: 0;
+}
+/* Estil dels text i imatges*/
+img {
+  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+p, a, btn{
+    font-family: var(--sans-serif);
+}
+
+
+h1, h2 {
+    font-family: var(--serif);
+}
+
+/* Fi estil dels text*/
+
+/* Estils columnes */
+.amplada{
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 90%;
+}
+.fila-centrada {
+    display: flex; 
+    align-items: center;
+}
+
+/* Fi estils columnes */
+
 #imatge-fons {
     height: 600px;
-    background-image: url('../img/image6.jpg');
+    background: var(--primaryColor);
     background-repeat: no-repeat;
     background-size: 1920px 600px;
 }
 
-#opcions-navegacio {
-	text-align: right;
+/*Barra de navegacio superior*/
+
+#columna-logo a{
+    font: 400 100px/1.3 'Oleo Script', Helvetica, sans-serif;
+    color: black;
+    text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+    font-size: 50px;
+    text-decoration: none
+} 
+
+#columna-logo a:hover{
+    opacity: 50%;
 }
-#nil {
-    margin-top: 15%;
-    width: 50%;
-    margin-left: 13%;
-    height: 10%;
+
+
+.btn-opcions {
+    text-decoration: none;
+    background-color: #fafafa;
+    color: black;
+    border: 2px solid #33691E; /* Green */
+    border-radius: 40px;
+    margin-left: 30px;
+    padding: 10px;
+}
+
+.btn-opcions:hover {
+   background-color: #bdbdbd;
+}
+
+.btn-opcions:active {
+    background: #9d9d9d;
 
 }
-.input-group.md-form.form-sm.form-2 input.lime-border {
-  border: 1px solid #cddc39;
+
+/*Fi barra navegacio suerior */
+
+/* Barra de cerca */
+.requadre {
+	margin-top: 190px;
+    margin-left: 5%;
+    margin-right: 5%;
+	background: white;
+	border-radius: 8px;
+    display: inline-block;
+    padding: 50px;
+    
 }
+
+.requadre h1 {
+
+	font-size: 40px;
+}
+
+.requadre p {
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+#barra-cerca {
+    margin-top: 5px;
+    height: 45px;
+    margin-left: 0;
+    width: auto;
+}
+
+#buscador{
+    height: 100%; 
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 2px solid #33691E; 
+    border-right: none;
+    font-family: var(--sans-serif);
+    font-size: 20px;
+    background-color: #fafafa;
+}
+
+.btn-buscar {
+    text-decoration: none;
+    background-color: var(--secondaryColor);
+    color: black;
+    border: 2px solid #33691E; /* Green */
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    height: 100%;
+    font-size: 20px;
+    
+}
+
+.btn-buscar:hover {
+   background-color: #FFC400;
+}
+
+.btn-buscar:active {
+    background: #FFAB00;
+
+}
+/* Fi barra de cerca */
 
  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
@@ -47,35 +177,44 @@
     display: block;
     text-align: left;
   }
+  .btn-opcions {
+      margin-bottom: 10px;
+}
 }
 
-/* Fi Barra de busqueda */
 
 /*Graella amb les coses que ofreim*/
-.features {
-	margin-top: 40px;
-	margin-left: 12.75%;
-	margin-bottom: 80px;
-	padding: 0;
+
+#columna1 {
+    margin: 0;
+    padding-left: 0;
+    padding-right: 32px;
+    
 }
 
-.features img {
-  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-  margin-bottom: 16px;
+#columna2 {
+    margin:0;
+    padding-left: 16px;
+    padding-right: 16px;
 }
-.features p {
+
+#columna3 {
+    padding-left: 32px;
+    padding-right: 0px;
+    margin: 0;
+}
+#grid1 p {
 	text-align: justify;
-}
-#ofrecemos {
-	font-size: 35px;
+    margin-top: 8px;
 }
 #grid1 {
 	padding-top: 10px;
 }
 #grid1 h1 {
-	font-size: 25px;
+	font-size: 35px;
+}
+#grid1 h2{
+    font-size: 25px;
 }
 
 /*Fi graella amb les coses que oferim*/
