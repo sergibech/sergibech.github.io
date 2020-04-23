@@ -4,19 +4,16 @@
     --secondaryColor: #FFD740;
     --sans-serif: Verdana, Geneva, sans-serif;
     --serif: Georgia, serif;
+	--buttonColor: #99cc60;
 }
 .no-space {
     margin: 0;
     padding: 0;
 }
 /* Estil dels text i imatges*/
-img {
-  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-}
 
-p, a, btn{
+
+p, a, btn, span, label, input {
     font-family: var(--sans-serif);
 }
 
@@ -28,7 +25,7 @@ h1, h2 {
 /* Fi estil dels text*/
 
 /* Estils columnes */
-.amplada{
+.amplada {
     margin-right: 5%;
     margin-left: 5%;
     width: 90%;
@@ -48,13 +45,14 @@ h1, h2 {
 }
 
 /*Barra de navegacio superior*/
-
-#columna-logo a{
+#columna-logo a {
+	text-decoration: none;
+}
+#columna-logo span {
     font: 400 100px/1.3 'Oleo Script', Helvetica, sans-serif;
     color: black;
     text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
     font-size: 50px;
-    text-decoration: none
 } 
 
 #columna-logo a:hover{
@@ -66,7 +64,7 @@ h1, h2 {
     text-decoration: none;
     background-color: #fafafa;
     color: black;
-    border: 2px solid #33691E; /* Green */
+    border: 2px solid var(--buttonColor); /* Green */
     border-radius: 40px;
     margin-left: 30px;
     padding: 10px;
@@ -106,38 +104,35 @@ h1, h2 {
     margin-bottom: 0;
 }
 
-#barra-cerca {
+#barra-cerca-ciutat {
     margin-top: 5px;
     height: 45px;
     margin-left: 0;
     width: auto;
 }
 
-#buscador{
-    height: 100%; 
-    border-top-left-radius: 40px;
-    border-bottom-left-radius: 40px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    border: 2px solid #33691E; 
-    border-right: none;
-    font-family: var(--sans-serif);
-    font-size: 20px;
+.buscador {
+	height: 100%;
+	font-family: var(--sans-serif);
+	font-size: 20px;
     background-color: #fafafa;
+	border-radius: 0;
+	border: none;
 }
 
+.sombrejat {
+	-webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);  
+}
 .btn-buscar {
     text-decoration: none;
     background-color: var(--secondaryColor);
     color: black;
-    border: 2px solid #33691E; /* Green */
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-top-right-radius: 40px;
-    border-bottom-right-radius: 40px;
     height: 100%;
     font-size: 20px;
-    
+	border-radius: 0;
+	border: none;
 }
 
 .btn-buscar:hover {
@@ -218,6 +213,267 @@ h1, h2 {
 }
 
 /*Fi graella amb les coses que oferim*/
+
+
+/*
+*
+*
+* Pagina de cerca
+*
+*
+*/
+/* ciutat actual */
+#informacio-ubicacio {
+	border: 1px solid #bdbdbd;
+    border-radius: 6px;
+	background: #fafafa;
+	
+}
+#ubicacio {
+	vertical-align: bottom;
+	font-size: 80px;
+	position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+	
+}
+#ciutat {
+	padding-left: 6px;
+	border-left: 1px solid var(--buttonColor);
+	position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* Fi ciutat actual */
+
+.columna-dreta {
+	padding-left: 28px;
+	padding-right: 0;
+}
+/* Barra busqueda */
+#barra-cerca-restaurant {
+	position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+	height: 45px;
+}
+/* Fi barra busqueda */
+
+/* Filtres de cerca avancada*/
+#capcalera h1 {
+	display: inline-block;
+}
+#capcalera a {
+	float:right;
+}
+#filtres-cerca-avancada {
+	position: sticky;
+	top: 0;
+}
+#box-advanced-filters {
+	border: 1px solid #bdbdbd;
+	border-radius: 10px;
+	padding: 15px;
+	background: #fafafa;
+}
+#filtres-cerca-avancada h1 {
+	font-family: var(--sans-serif);
+	font-size: 18px;
+	font-weight: bold;
+}
+#filtres-cerca-avancada h2 {
+	font-family: var(--sans-serif);
+	font-size: 16px;
+	font-weight: bold;
+}
+#filtres-cerca-avancada h3 {
+	font-family: var(--sans-serif);
+	font-size: 14px;
+}
+
+#preu-min-span, #preu-max-span, #val-min-span, #val-max-span  {
+	float: right;
+}
+.slider {
+	-webkit-appearance: none;
+	height: 5px;
+	width: 80%;
+	border-radius: 20px;  
+	background: #d3d3d3;
+	outline: none;
+	opacity: 1;
+	webkit-transition: .2s;
+	transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 10px;
+	height: 25px;
+	border-radius: 10px;
+	background: var(--buttonColor);
+	cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+	width: 10px;
+	height: 25px;
+	border-radius: 10px;
+	background: var(-buttonColor);
+	cursor: pointer;
+}
+
+#filtres-cerca-avancada .container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+#filtres-cerca-avancada .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Caixa */
+#filtres-cerca-avancada .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20.5px;
+  width: 20.5px;
+  background-color: #eee;
+}
+#dietes .checkmark {
+	border: 1px solid var(--buttonColor);
+}
+#ofertes .checkmark {
+	border-radius: 50%;
+}
+
+
+/* Quan passem per sobre */
+#filtres-cerca-avancada .container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* Color de fons */
+#filtres-cerca-avancada .container input:checked ~ .checkmark {
+  background-color: var(--buttonColor);
+}
+
+/* Creacio de l'indicador */
+#filtres-cerca-avancada .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Mostrar l'indicador */
+#filtres-cerca-avancada .container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Estil de l'indicador */
+#dietes .container .checkmark:after {
+  left: 6px;
+  left: 6px;
+  top: 1.5px;
+  width: 5px;
+  height: 14px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+#ofertes .container .checkmark:after {
+ 	top: 6.25px;
+	left: 6.25px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: black;
+}
+
+#filtres-cerca-avancada h2 {
+	margin-bottom: 20px;
+}
+/* Fi Filtres Cerca Avancada */
+
+/*Cuines populars*/
+#cuines-populars h1 {
+	font-family: var(--sans-serif);
+	font-size: 18px;
+	font-weight: bold;
+}
+#fons-carousel {
+	border: 1px solid var(--buttonColor);
+	border-radius: 5px;
+	padding: 15px;
+	background: var(--primaryColor);
+}
+.carousel-item {
+	height: 130px;
+}
+.carousel-item .card-body {
+	height: 125px;
+	padding: 10px;
+	border-radius: 10px;
+}
+.carousel-item .card-body img {
+	height: 80%;
+	margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* display 3 */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(33.333%);
+    }
+    
+    .carousel-inner .carousel-item-left.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.333%);
+    }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
+}
+
+/*Fi Cuines populars*/
+
+
 
 /*Footer*/
 #peu {
