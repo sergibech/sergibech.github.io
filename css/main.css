@@ -1,4 +1,6 @@
-
+#pagina-interior {
+	background: #fafafa;
+}
 :root {
     --primaryColor: #CCFF90;
     --secondaryColor: #FFD740;
@@ -39,9 +41,8 @@ h1, h2 {
 
 #imatge-fons {
     height: 600px;
-    background: var(--primaryColor);
-    background-repeat: no-repeat;
-    background-size: 1920px 600px;
+    background-image: url('../img/fons.png');
+    background-size: cover;
 }
 
 /*Barra de navegacio superior*/
@@ -62,12 +63,11 @@ h1, h2 {
 
 .btn-opcions {
     text-decoration: none;
-    background-color: #fafafa;
+    background-color: white;
     color: black;
-    border: 2px solid var(--buttonColor); /* Green */
-    border-radius: 40px;
+    border-radius: 8px;
     margin-left: 30px;
-    padding: 10px;
+    padding: 8px;
 }
 
 .btn-opcions:hover {
@@ -78,6 +78,11 @@ h1, h2 {
     background: #9d9d9d;
 
 }
+.icona {
+	color: var(--buttonColor);
+	margin-right: 2px;
+	vertical-align: bottom;
+}
 
 /*Fi barra navegacio suerior */
 
@@ -86,7 +91,7 @@ h1, h2 {
 	margin-top: 190px;
     margin-left: 5%;
     margin-right: 5%;
-	background: white;
+	background: #fafafa;
 	border-radius: 8px;
     display: inline-block;
     padding: 50px;
@@ -109,14 +114,18 @@ h1, h2 {
     height: 45px;
     margin-left: 0;
     width: auto;
+	border-radius: 5px;
 }
 
 .buscador {
 	height: 100%;
 	font-family: var(--sans-serif);
 	font-size: 20px;
-    background-color: #fafafa;
-	border-radius: 0;
+    background-color: white;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
 	border: none;
 }
 
@@ -131,7 +140,10 @@ h1, h2 {
     color: black;
     height: 100%;
     font-size: 20px;
-	border-radius: 0;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
 	border: none;
 }
 
@@ -226,7 +238,7 @@ h1, h2 {
 #informacio-ubicacio {
 	border: 1px solid #bdbdbd;
     border-radius: 6px;
-	background: #fafafa;
+	background: white;
 	
 }
 #ubicacio {
@@ -235,6 +247,7 @@ h1, h2 {
 	position: relative;
     top: 50%;
     transform: translateY(-50%);
+	color: var(--buttonColor);
 	
 }
 #ciutat {
@@ -256,6 +269,7 @@ h1, h2 {
     top: 50%;
     transform: translateY(-50%);
 	height: 45px;
+	border-radius: 5px;
 }
 /* Fi barra busqueda */
 
@@ -274,7 +288,7 @@ h1, h2 {
 	border: 1px solid #bdbdbd;
 	border-radius: 10px;
 	padding: 15px;
-	background: #fafafa;
+	background: white;
 }
 #filtres-cerca-avancada h1 {
 	font-family: var(--sans-serif);
@@ -419,10 +433,9 @@ h1, h2 {
 	font-weight: bold;
 }
 #fons-carousel {
-	border: 1px solid var(--buttonColor);
-	border-radius: 5px;
-	padding: 15px;
-	background: var(--primaryColor);
+	
+	padding: 10px;
+	
 }
 .carousel-item {
 	height: 130px;
@@ -431,10 +444,7 @@ h1, h2 {
 	height: 125px;
 	padding: 10px;
 	border-radius: 10px;
-}
-.carousel-item .card-body img {
-	height: 80%;
-	margin-bottom: 0;
+	background-size: 100% 100%;
 }
 
 @media (max-width: 768px) {
