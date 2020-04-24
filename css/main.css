@@ -2,7 +2,10 @@
 	background: #fafafa;
 }
 :root {
-    --primaryColor: #CCFF90;
+    --primaryLightColor: #CCFF90;
+    --primaryColor: #7ca8a1;
+    --primaryDarkColor: #0a7879;
+    --secondaryLightColor: #f4a363;
     --secondaryColor: #FFD740;
     --sans-serif: Verdana, Geneva, sans-serif;
     --serif: Georgia, serif;
