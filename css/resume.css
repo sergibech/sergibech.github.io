@@ -1,8 +1,23 @@
-#comanda {
-  background: green;
+#labelCheck{
+  color: black;
 }
+
+#comanda{
+  margin-top: 3%;
+  margin-bottom: 3%;
+  background: var(--primaryLightColor);
+  padding-top: 10px;
+  padding-bottom: 20px;
+  width: 600px;
+}
+
 #pagament {
-  background: blue;
+  color: black;
+}
+
+#inputs_pagament{
+  margin-top: 3%;
+  color: black;
 }
 
 #comida {
@@ -12,6 +27,20 @@
 #cantidad {
   margin-top: 1%;
   text-align: center;
+}
+#precio {
+  margin-top: 1%;
+  text-align: center;
+}
+#totalPrecio {
+  text-align: center;
+}
+#totalCantidad {
+  text-align: center;
+}
+
+#check{
+  margin-top: 2%;
 }
 
 #btnvisa {

@@ -105,6 +105,11 @@ h1, h2 {
 
 	font-size: 40px;
 }
+.requadre h6 {
+
+  font-size: 18px;
+  margin-top: 20px;
+}
 
 .requadre p {
     font-size: 12px;
