@@ -1,9 +1,5 @@
-h1#foo  {
-    color: var(--primary-color);
-}
-
 #resultat {
-  color: var(--primary-text-color);
+  color: black;
   margin-top: 2%;
   margin-bottom: 2%;
   margin-left: 2%;
@@ -13,9 +9,6 @@ h1#foo  {
 #btnTornar {
   margin-top: 2%;
   margin-bottom: 2%;
-  background: var(--secondary-light-color);
-  color: var(--secondary-text-color);
-  border-color: var(--secondary-dark-color);
 }
 
 /*Footer*/

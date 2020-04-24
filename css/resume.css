@@ -1,28 +1,20 @@
-h1#foo  {
-    color: var(--primary-color);
-}
-
 #labelCheck{
-  color: var(--secondary-text-color);
-}
-#req_comanda {
-  background: var(--primary-dark-color);
+  color: black;
 }
 
 #comanda{
-  background: var(--primary-color);
+  background: var(--primaryLightColor);
   margin-top: 2%;
   margin-bottom: 2%;
 }
 
 #pagament {
-  background: var(--secondary-color);
-  color: var(--secondary-text-color);
+  color: black;
 }
 
 #inputs_pagament{
   margin-top: 3%;
-  color: var(--secondary-text-color);
+  color: black;
 }
 
 #comida {
@@ -67,9 +59,6 @@ h1#foo  {
 #btnContinuar {
   margin-top: 2%;
   margin-bottom: 2%;
-  background: var(--secondary-light-color);
-  color: var(--secondary-text-color);
-  border-color: var(--secondary-dark-color);
 }
 
 
