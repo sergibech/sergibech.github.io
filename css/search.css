@@ -1,78 +1,8 @@
-#nil {
-	background: green;
-}
-#ballus {
-	background: grey;
-	padding: 0;
-}
 #riu {
-	background: yellow;
+	
 	padding: 0;
+	margin-top: 10px;
 }
-
-/* Filtres de cerca avancada*/
-label{
-    font-weight: 600;
-}
-#advanced-search-filters {
-	position: sticky;
-	top: 0;
-}
-#advanced-search-filters h1 {
-	font-size: 25px;
-}
-#box-advanced-filters {
-	border: 2px solid grey;
-	border-radius: 8px;
-	padding: 10px;
-}
-.custom-control{
-    font-weight: normal;
-}
-/*Fi Filtres de cerca avancada*/
-
-/*Cocinas populares*/
-@media (max-width: 768px) {
-    .carousel-inner .carousel-item > div {
-        display: none;
-    }
-    .carousel-inner .carousel-item > div:first-child {
-        display: block;
-    }
-}
-
-.carousel-inner .carousel-item.active,
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev {
-    display: flex;
-}
-
-/* display 3 */
-@media (min-width: 768px) {
-    
-    .carousel-inner .carousel-item-right.active,
-    .carousel-inner .carousel-item-next {
-      transform: translateX(33.333%);
-    }
-    
-    .carousel-inner .carousel-item-left.active, 
-    .carousel-inner .carousel-item-prev {
-      transform: translateX(-33.333%);
-    }
-}
-
-.carousel-inner .carousel-item-right,
-.carousel-inner .carousel-item-left{ 
-  transform: translateX(0);
-}
-img {
-  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-  margin-bottom: 16px;
-  border-radius: 8px;
-}
-/*Fi cocinas populares*/
 
 /*Restaurants*/
 #ordenar-por {
@@ -80,39 +10,5 @@ img {
 }
 /*Fi Restaurants*/
 
-/*Footer*/
-#peu {
-	margin-top: 0px;
-	margin-left: 12.75%;
-	margin-bottom: 5px;
-	padding: 0;
-}
 
-.vertical a {
-	display: block;
-}
 
-#facebook:hover {
-	content: url("../img/image6.jpg");
-}
-#twitter:hover {
-	content: url("../img/image6.jpg");
-}
-#instagram:hover {
-	content: url("../img/image6.jpg");
-}
-            
-.page-footer {
-    background-color: #222;
-    color: #ccc;
-	padding: 18px 0 30px;
-}
-.page-footer h1 {
-	font-size: 20px; 
-}
-
-.footer-copyright {
-    color: #666;
-	padding-top: 10px;
-}
-/*Fi footer*/
