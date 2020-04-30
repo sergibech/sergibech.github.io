@@ -23,12 +23,19 @@
 #comida {
   margin-top: 1%;
 }
-
+.fila{
+  margin-top:18px;
+  font-size: 12px;
+}
 #cantidad {
   margin-top: 1%;
   text-align: center;
 }
 #precio {
+  margin-top: 1%;
+  text-align: center;
+}
+#precio_uni {
   margin-top: 1%;
   text-align: center;
 }
