@@ -290,10 +290,6 @@ h1, h2 {
 #capcalera a {
 	float:right;
 }
-#filtres-cerca-avancada {
-	position: sticky;
-	top: 0;
-}
 #box-advanced-filters {
 	border: 1px solid #bdbdbd;
 	border-radius: 5px;
@@ -520,11 +516,6 @@ h1, h2 {
 .dropdown-item {
 	font-size: 14px;
 }
-
-#restaurants-disponibles h2 {
-	font-family: var(--sans-serif);
-	font-size: 20px;
-}
 .casella-restaurant {
 	cursor: pointer;
 	border: 1px solid #bdbdbd;
@@ -532,9 +523,10 @@ h1, h2 {
 	padding: 12px;
 	background: white;
 }
-.casella-restaurant a{
-	text-decoration: none;
+.casella-restaurant:hover {
+	opacity: 85%;
 }
+
 .columna1 {
     margin-top: 0.75%;
     padding-left: 0;
@@ -554,9 +546,73 @@ h1, h2 {
 }
 .img-restaurant {
 	border-radius: 5px;
+	margin-bottom: 6px;
 }
-	
+
+#restaurants-disponibles h2 {
+	font-family: var(--sans-serif);
+	font-size: 20px;
+}
+
+#restaurants-disponibles a {
+	text-decoration: none;
+	color: black;
+	font-size: 14px;
+}
+#restaurants-disponibles i {
+	font-size: 20px;
+}
 /* Fi Llista Restaurants */
+
+/*
+*
+*
+* Fi Pagina de cerca
+*
+*
+*/
+
+
+
+/*
+*
+*
+* Pagina de restaurant
+*
+*
+*/
+/* Informacio restaurants*/
+#informacio-restaurant {
+	background: red;
+	background-image: url('../img/background-restaurant.jpg');
+    background-size: cover;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+#requadre-info-restaurant {
+	background: white;
+	display: inline-block;
+	border: 1px solid #bdbdbd;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	padding: 15px 5%;
+}
+}
+/*Fi informacio restaurants*/
+
+
+/*
+*
+*
+* Pagina de cerca
+*
+*
+*/
+
+
 
 
 /*Footer*/
@@ -585,6 +641,7 @@ h1, h2 {
     background-color: #222;
     color: #ccc;
 	padding: 18px 0 30px;
+	margin-top: 30px;
 }
 .page-footer h1 {
 	font-size: 20px; 
@@ -595,3 +652,25 @@ h1, h2 {
 	padding-top: 10px;
 }
 /*Fi footer*/
+
+
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 500px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
