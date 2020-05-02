@@ -29,6 +29,14 @@ h1, h2 {
 
 /* Fi estil dels text*/
 
+
+.requadre-informacio {
+	border: 1px solid #bdbdbd;
+	border-radius: 5px;
+	background: white;
+}
+
+
 /* Estils columnes */
 .amplada {
     margin-right: 5%;
@@ -90,7 +98,7 @@ h1, h2 {
 
 /*Fi barra navegacio suerior */
 
-/* Barra de cerca */
+/* Barra de cerca central */
 .requadre {
 	margin-top: 190px;
     margin-left: 5%;
@@ -164,7 +172,7 @@ h1, h2 {
     background: #FFAB00;
 
 }
-/* Fi barra de cerca */
+/* Fi barra de cerca central */
 
  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
@@ -245,18 +253,14 @@ h1, h2 {
 *
 */
 /* ciutat actual */
-#informacio-ubicacio {
-	border: 1px solid #bdbdbd;
-    border-radius: 5px;
-	background: white;
-	
+.centrat-vertical {
+	 vertical-align: bottom;
+	 position: relative;
+	 top: 50%;
+	 transform: translateY(-50%);
 }
 #ubicacio {
-	vertical-align: bottom;
 	font-size: 80px;
-	position: relative;
-    top: 50%;
-    transform: translateY(-50%);
 	color: var(--buttonColor);
 	
 }
@@ -291,10 +295,7 @@ h1, h2 {
 	float:right;
 }
 #box-advanced-filters {
-	border: 1px solid #bdbdbd;
-	border-radius: 5px;
 	padding: 15px;
-	background: white;
 }
 #filtres-cerca-avancada h1 {
 	font-family: var(--sans-serif);
@@ -314,7 +315,7 @@ h1, h2 {
 #preu-min-span, #preu-max-span, #val-min-span, #val-max-span  {
 	float: right;
 }
-.slider {
+.formulari .slider {
 	-webkit-appearance: none;
 	height: 5px;
 	width: 80%;
@@ -326,7 +327,7 @@ h1, h2 {
 	transition: opacity .2s;
 }
 
-.slider::-webkit-slider-thumb {
+.formulari .slider::-webkit-slider-thumb {
 	-webkit-appearance: none;
 	appearance: none;
 	width: 10px;
@@ -336,7 +337,7 @@ h1, h2 {
 	cursor: pointer;
 }
 
-.slider::-moz-range-thumb {
+.formulari .slider::-moz-range-thumb {
 	width: 10px;
 	height: 25px;
 	border-radius: 10px;
@@ -344,7 +345,7 @@ h1, h2 {
 	cursor: pointer;
 }
 
-#filtres-cerca-avancada .container {
+.formulari .container {
   display: block;
   position: relative;
   padding-left: 35px;
@@ -358,7 +359,7 @@ h1, h2 {
 }
 
 
-#filtres-cerca-avancada .container input {
+.formulari .container input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -367,7 +368,7 @@ h1, h2 {
 }
 
 /* Caixa */
-#filtres-cerca-avancada .checkmark {
+.formulari .checkmark {
   position: absolute;
   top: 0;
   left: 0;
@@ -375,38 +376,38 @@ h1, h2 {
   width: 20.5px;
   background-color: #eee;
 }
-#dietes .checkmark {
+.grupCheckBox .checkmark {
 	border: 1px solid var(--buttonColor);
 }
-#ofertes .checkmark {
+.grupRadioButton .checkmark {
 	border-radius: 50%;
 }
 
 
 /* Quan passem per sobre */
-#filtres-cerca-avancada .container:hover input ~ .checkmark {
+.formulari .container:hover input ~ .checkmark {
   background-color: #ccc;
 }
 
 /* Color de fons */
-#filtres-cerca-avancada .container input:checked ~ .checkmark {
+.formulari .container input:checked ~ .checkmark {
   background-color: var(--buttonColor);
 }
 
 /* Creacio de l'indicador */
-#filtres-cerca-avancada .checkmark:after {
+.formulari .checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
 
 /* Mostrar l'indicador */
-#filtres-cerca-avancada .container input:checked ~ .checkmark:after {
+.formulari .container input:checked ~ .checkmark:after {
   display: block;
 }
 
 /* Estil de l'indicador */
-#dietes .container .checkmark:after {
+.grupCheckBox .container .checkmark:after {
   left: 6px;
   left: 6px;
   top: 1.5px;
@@ -418,7 +419,7 @@ h1, h2 {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-#ofertes .container .checkmark:after {
+.grupRadioButton .container .checkmark:after {
  	top: 6.25px;
 	left: 6.25px;
 	width: 8px;
@@ -518,13 +519,10 @@ h1, h2 {
 }
 .casella-restaurant {
 	cursor: pointer;
-	border: 1px solid #bdbdbd;
-	border-radius: 5px;
 	padding: 12px;
-	background: white;
 }
 .casella-restaurant:hover {
-	opacity: 85%;
+	opacity: 70%;
 }
 
 .columna1 {
@@ -583,7 +581,6 @@ h1, h2 {
 */
 /* Informacio restaurants*/
 #informacio-restaurant {
-	background: red;
 	background-image: url('../img/background-restaurant.jpg');
     background-size: cover;
 	padding-top: 60px;
@@ -600,62 +597,14 @@ h1, h2 {
 	border-bottom-right-radius: 5px;
 	padding: 15px 5%;
 }
+#horaris {
+ color: #007bff;
+ cursor: pointer;
 }
-/*Fi informacio restaurants*/
-
-
-/*
-*
-*
-* Pagina de cerca
-*
-*
-*/
-
-
-
-
-/*Footer*/
-#peu {
-	margin-top: 0px;
-	margin-left: 12.75%;
-	margin-bottom: 5px;
-	padding: 0;
+#horaris:hover {
+	color: #0056b3;
+	text-decoration: underline;
 }
-
-.vertical a {
-	display: block;
-}
-
-#facebook:hover {
-	content: url("../img/facebook_color.png");
-}
-#twitter:hover {
-	content: url("../img/twitter_color.png");
-}
-#instagram:hover {
-	content: url("../img/instagram_color.png");
-}
-            
-.page-footer {
-    background-color: #222;
-    color: #ccc;
-	padding: 18px 0 30px;
-	margin-top: 30px;
-}
-.page-footer h1 {
-	font-size: 20px; 
-}
-
-.footer-copyright {
-    color: #666;
-	padding-top: 10px;
-}
-/*Fi footer*/
-
-
-
-
 .dropdown {
   position: relative;
   display: inline-block;
@@ -665,12 +614,214 @@ h1, h2 {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 500px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 12px 16px;
-  z-index: 1;
+  min-width: 300px;
+  padding: 15px;
+  z-index: 2;
+  border-radius: 3px;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
+/*Fi informacio restaurants*/
+
+/* Barra tipus de menjars */
+#lema-oferta-platos {
+	font-size: 20px;
+}
+
+#barra {
+	margin-top: 30px;
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+.seccio-plat {
+	margin-top: 25px;
+}
+
+#barra ul {
+	flex: auto;
+	justify-content: space-between;
+}
+/* Fi barra tipus de menjars */
+
+/* Plats */
+.tag-tipus-menjar {
+		font-size: 25px;
+}
+.plat {
+	margin-top: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: justify;
+}
+.columna-esquerra-plat {
+	padding-left: 20px;
+	padding-right: 0;
+}
+.columna-dreta-plat {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.columna-sencera-plat {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+#nom-plat {
+	font-family: var(--sans-serif);
+	font-size: 20px;
+	font-weight: bold; 
+}
+#preu {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.subtitol-restaurant {
+	font-size: 18px;
+}
+
+.boto-afegir-treure-plat {
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+}
+.icona-afegir-treure-plat {
+	vertical-align: middle;
+	background: var(--buttonColor);
+	border-radius: 50%;
+}
+.comptador-afegir-treure-plat {
+	margin-left: 5px;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+.icona-afegir-treure-plat:hover {
+   background-color: var(--primaryDarkColor);
+}
+
+.icona-afegir-treure-plat:active {
+    background: #9d9d9d;
+}
+
+
+/* Fi Plats */
+
+/* Resum comanda */
+#resum-comanda {
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0;
+}
+#resum-comanda h1 {
+	font-family: var(--sans-serif);
+	font-size: 18px;
+	font-weight: bold;
+}
+#resum-comanda h2 {
+	font-family: var(--sans-serif);
+	font-size: 16px;
+	font-weight: bold;
+}
+#resum-comanda span {
+	font-size: 14px;
+}
+#requadre-comanda {
+	padding: 15px;
+	background: var(--primaryLightColor);
+}
+/* Fi Resum comanda */
+
+/* Valoracions */
+#valoracions {
+	margin-top: 30px;
+}
+#contorn-valoracions {
+	padding: 15px;
+}
+.icona-valoracions {
+	vertical-align: bottom;
+}
+#valoracions h1 {
+	font-family: var(--sans-serif);
+	font-size: 25px;
+}
+/* Fi Valoracions */
+
+/* Comentaris */
+#comentaris {
+margin-top: 30px;
+}
+#comentaris h1 {
+	font-family: var(--sans-serif);
+	font-size: 25px;
+}
+.resposta {
+	margin-top: 1.5rem;
+    margin-left: 4rem;
+}
+.text-secundari {
+	color: #6c757d;
+}
+.btn-like {
+	text-decoration: none;
+    background-color: #dc3545;
+    color: white;
+    height: 100%;
+    font-size: 16px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border: none;
+}
+.btn-like:hover {
+   background-color: #c82333;
+}
+
+.btn-like:active {
+    background: #9A1925;
+}
+/* Fi Comentaris */
+
+/*
+*
+*
+* Fi Pagina de Restaurants
+*
+*
+*/
+
+
+
+
+/*Footer*/
+.page-footer {
+    background-color: #222;
+    color: #ccc;
+	padding: 18px 0 30px;
+	margin-top: 30px;
+}
+.page-footer h1 {
+	font-size: 20px; 
+}
+.vertical a {
+	display: block;
+}
+#facebook:hover {
+	content: url("../img/facebook_color.png");
+}
+#twitter:hover {
+	content: url("../img/twitter_color.png");
+}
+#instagram:hover {
+	content: url("../img/instagram_color.png");
+}
+.footer-copyright {
+    color: #666;
+	padding-top: 10px;
+}
+/*Fi footer*/
