@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" type="text/css" href="css/resume.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-
 </head>
 
 <body id="pagina-interior">
@@ -47,163 +46,181 @@
 	</div>
 </div>
 
-<div class="container-fluid">
+<div class="container-fluid amplada" style="margin-top: 30px">
 	<div class="row">
-		<div class="col-lg-6 col-md-6 col-sm-12" id="pagament">
-			<form class="pay.html" id="inputs_pagament">
+		<div class="col-lg-6 col-md-6 col-sm-12 no-space">
+			<h1>Formulario del pedido</h1>
+			<p>Por favor, rellene el siguiente formulario para poder procesar su pedido</p>
+			<form>
 			  <div class="form-row">
 			    <div class="col-md-4 mb-3">
 			    	<label for="dataEntrega">Data de entrega</label>
-				    <input type="date" class="form-control is-valid" id="dataEntrega" required> 
+				    <input type="date" class="form-control" id="dataEntrega" required> 
 				</div>
 				<div class="col-md-4 mb-3">
 			    	<label for="horaEntrega">Hora de entrega</label>
-				    <input type="time" class="form-control is-valid" id="horaEntrega" required> 
+				    <input type="time" class="form-control" id="horaEntrega" required> 
 				</div>
 			  </div>
 			  <div class="form-row">
 			    <div class="col-md-4 mb-3">
 			      <label for="validationServer01">Nombre</label>
-			      <input type="text" class="form-control is-valid" id="validationServer01" required>
+			      <input type="text" class="form-control" id="validationServer01" required>
 			    </div>
 			    <div class="col-md-4 mb-3">
 			      <label for="validationServer02">Apellidos</label>
-			      <input type="text" class="form-control is-valid" id="validationServer02" required>
+			      <input type="text" class="form-control" id="validationServer02" required>
 			    </div>
 			  </div>
 			  <div class="form-row">
 			  	<div class="col-md-6 mb-3">
 				  	<label for="validationServer06">Email</label>
-				    <input type="email" class="form-control is-valid" id="validationServer06" required>
+				    <input type="email" class="form-control" id="validationServer06" required>
 				</div>
 				<div class="col-md-4 mb-3">
 				  	<label for="validationServer06">Teléfono de contacto</label>
-				    <input type="number" class="form-control is-valid" id="validationServer07" required>
+				    <input type="number" class="form-control" id="validationServer07" required>
 				</div>
 			  </div>
 			  <div class="form-row">
 			    <div class="col-md-6 mb-3">
 			      <label for="validationServer03">Dirección</label>
-			      <input type="text" class="form-control is-valid" id="validationServer03" required>
+			      <input type="text" class="form-control" id="validationServer03" required>
 			      
 			    </div>
 			    <div class="col-md-3 mb-3">
 			      <label for="validationServer04">Ciudad</label>
-			      <input type="text" class="form-control is-valid" id="validationServer04" required>
+			      <input type="text" class="form-control" id="validationServer04" required>
 			      
 			    </div>
 			    <div class="col-md-3 mb-3">
 			      <label for="validationServer05">Código Postal</label>
-			      <input type="text" class="form-control is-valid" id="validationServer05" required>
+			      <input type="text" class="form-control" id="validationServer05" required>
 			      
 			    </div>
 			  </div>
 			  <div class="form-row">
 			  	<div class="col-md-12 mb-12">
 			  		<label for="metode">Método de pago</label>
-				  	<div id="metode">
-					  	<div class="form-check-inline">
-				  		  <input type="radio" class="form-check-input" name="optradio" id="visa" required>
-						  <label class="form-check-label" for="visa">
-						    <img class="img-fluid" src="img/visa.jpg" alt="logo visa" id="btnvisa"/>
-						  </label>
-						</div>
+				  	<div class="formulari grupRadioButton">
 						<div class="form-check-inline">
-						  <input type="radio" class="form-check-input" name="optradio" id="mastercard" required>
-						  <label class="form-check-label" for="mastercard">
-						    <img class="img-fluid" src="img/mastercard.jpg" alt="logo mastercard" id="btnmaster"/>
-						  </label>
-						</div>
-						<div class="form-check-inline">
-						  <input type="radio" class="form-check-input" name="optradio" id="apple" required>
-						  <label class="form-check-label" for="apple">
-						    <img class="img-fluid" src="img/applepay.jpg" alt="logo apple pay" id="btnapple"/>
-						  </label>
-						</div>
-						<div class="form-check-inline">
-						  <input type="radio" class="form-check-input" name="optradio" id="google" required>
-						  <label class="form-check-label" for="google">
-						    <img class="img-fluid" src="img/googlepay.png" alt="logo google pay" id="btngoogle"/>
-						  </label>
+							<label class="container"><img class="img-fluid" src="img/visa.jpg" alt="logo visa" id="btnvisa"/>
+								<input type="radio" checked="checked" name="radio">
+								<span class="checkmark" style="top: 15px"></span>
+							</label>
+							<label class="container"><img class="img-fluid" src="img/mastercard.jpg" alt="logo mastercard" id="btnmaster"/>
+							  <input type="radio" name="radio">
+							  <span class="checkmark" style="top: 15px"></span>
+							</label>
+							<label class="container"><img class="img-fluid" src="img/applepay.jpg" alt="logo apple pay" id="btnapple"/>
+							  <input type="radio" name="radio">
+							  <span class="checkmark" style="top: 15px"></span>
+							</label>
+							<label class="container"><img class="img-fluid" src="img/googlepay.png" alt="logo google pay" id="btngoogle"/>
+							  <input type="radio" name="radio">
+							  <span class="checkmark" style="top: 15px"></span>
+							</label>
 						</div>
 				    </div>
 				</div>
 			  </div>
-			  <div class="form-group">
-			    <div class="form-check" id="check">
-			      <input class="form-check-input is-valid" type="checkbox" value="" id="invalidCheck3" required>
-			      <label class="form-check-label" for="invalidCheck3" id="labelCheck">
-			        Acepto los términos y condiciones
-			      </label>
-			    </div>
+			  <div class="form-group formulari grupCheckBox" id="check">
+							<label class="container" style="font-size: 1rem">Acepto los términos y condiciones
+								<input type="checkbox">
+								<span class="checkmark" style="top: 2px"></span>
+							</label>
 			  </div>
 			  <button class="btn btn-buscar sombrejat" type="submit" id="btnContinuar">Continuar</button>
 			</form>
 		</div>
-		<div class="col-lg-6 col-md-6 col-sm-12" id="req_comanda">
-			<div class="requadre sombrejat" id="comanda">
-				<div class="row">
-					<div class="col-lg-4 col-md-4 col-sm-4" id="comida">
-						<h6>COMIDA</h6>
-						<p>Paella marinera</p>
-						<p>Churrasco al punto</p>
-						<p>Cordero al horno</p>
-						<p>Hamburguesa vegana</p>
-					</div>
-					<div class="col-lg-3 col-md-3 col-sm-3" id="cantidad">
-						<h6>CANTIDAD</h6>
-						<div class="fila">
-								<input type="image" alt="quitar" src="img/menys.png" style="height: auto; width: 20%; vertical-align: middle;">
-								<span style="vertical-align: middle;">10</span>
-								<input type="image" alt="añadir" src="img/mes.png" style="height: auto; width: 20%; vertical-align: middle;">
-							
+		<div class="col-lg-6 col-md-6 col-sm-12 no-space" id="resum-comanda-final">
+			<div class="resum-comanda">
+				<h1>Resumen del pedido</h1>
+				<div class="sombrejat requadre-informacio" id="requadre-comanda">
+					<div class="container-fluid no-space">
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-sm-3">
+								<h2>Artículo</h2>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2 text-center">
+								<h2>Opción</h2>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2 text-center">
+								<h2>Precio</h2>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-3 text-center">
+								<h2>Cantidad</h2>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2 text-right">
+								<h2>Total</h2>
+							</div>
 						</div>
-						<div class="fila">
-								<input type="image" alt="quitar" src="img/menys.png" style="height: auto; width: 20%; vertical-align: middle;">
-								<span style="vertical-align: middle;">5</span>
-								<input type="image" alt="añadir" src="img/mes.png" style="height: auto; width: 20%; vertical-align: middle;">
-							
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-sm-3">
+								<span>Macarrons</span>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2 text-center">
+								<span>Vegana</span>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2 text-center">
+								<span>4,46€</span>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-3 text-center">
+								<button class="boto-afegir-treure-plat"><i class="material-icons icona-afegir-treure-plat" style="font-size: 18px">remove</i></button>
+								<span class="comptador-afegir-treure-plat" style="font-size: 14px">4</span>
+								<button class="boto-afegir-treure-plat"><i class="material-icons icona-afegir-treure-plat" style="font-size: 18px">add</i></button>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2 text-right">
+								<span>2,09€</span>
+							</div>
 						</div>
-						<div class="fila">
-								<input type="image" alt="quitar" src="img/menys.png" style="height: auto; width: 20%; vertical-align: middle;">
-								<span style="vertical-align: middle;">4</span>
-								<input type="image" alt="añadir" src="img/mes.png" style="height: auto; width: 20%; vertical-align: middle;">
-							
+						<div class="row" style="margin-top: 8px">
+							<div class="col-lg-3 col-md-3 col-sm-3">
+								<span>Fanta de naranj</span>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2 text-center">
+								<span>Light</span>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2 text-center">
+								<span>2,04€</span>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-3 text-center">
+								<button class="boto-afegir-treure-plat"><i class="material-icons icona-afegir-treure-plat" style="font-size: 18px">remove</i></button>
+								<span class="comptador-afegir-treure-plat" style="font-size: 14px">4</span>
+								<button class="boto-afegir-treure-plat"><i class="material-icons icona-afegir-treure-plat" style="font-size: 18px">add</i></button>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2 text-right">
+								<span>2,90€</span>
+							</div>
 						</div>
-						<div class="fila">
-								<input type="image" alt="quitar" src="img/menys.png" style="height: auto; width: 20%; vertical-align: middle;">
-								<span style="vertical-align: middle;">1</span>
-								<input type="image" alt="añadir" src="img/mes.png" style="height: auto; width: 20%; vertical-align: middle;">
-							
+						<div class="row" style="margin-top: 8px">
+							<div class="col-lg-3 col-md-3 col-sm-3">
+								<span>Flan de huevo</span>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2 text-center">
+								<span>Celíaca</span>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2 text-center">
+								<span>1,09€</span>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-3 text-center">
+								<button class="boto-afegir-treure-plat"><i class="material-icons icona-afegir-treure-plat" style="font-size: 18px">remove</i></button>
+								<span class="comptador-afegir-treure-plat" style="font-size: 14px">4</span>
+								<button class="boto-afegir-treure-plat"><i class="material-icons icona-afegir-treure-plat" style="font-size: 18px">add</i></button>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2 text-right">
+								<span>2,87€</span>
+							</div>
 						</div>
-					</div>
-					<div class="col-lg-3 col-md-3 col-sm-3" id="precio_uni">
-						<h6>PRECIO/UNI</h6>
-						<p>23€/uni</p>
-						<p>14€/uni</p>
-						<p>15€/uni</p>
-						<p>20€/uni</p>
-					</div>
-					<div class="col-lg-2 col-md-2 col-sm-2" id="precio">
-						<h6>PRECIO</h6>
-						<p>230€</p>
-						<p>70€</p>
-						<p>60€</p>
-						<p>20€</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-4 col-md-4 col-sm-4" id="totalComida">
-						<h6>TOTAL</h6>
-					</div>
-					<div class="col-lg-3 col-md-3 col-sm-3" id="totalCantidad">
-						<h6>20</h6>
-					</div>
-					<div class="col-lg-3 col-md-3 col-sm-3" id="totalCantidad">
-						<h6></h6>
-					</div>
-					<div class="col-lg-2 col-md-2 col-sm-2" id="totalPrecio">
-						<h6>380€</h6>
+						<hr>
+						<div class="row">
+							<div class="col-lg-10 col-md-10 col-sm-10">
+								<span style="font-size: 16px"><strong>Precio total</strong></span>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2 text-right">
+								<span><strong>20,54€</strong></span>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
