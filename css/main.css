@@ -110,15 +110,7 @@ h1, h2 {
     
 }
 
-.requadre h1 {
 
-	font-size: 40px;
-}
-.requadre h6 {
-
-  font-size: 18px;
-  margin-top: 20px;
-}
 
 .requadre p {
     font-size: 12px;
@@ -440,9 +432,22 @@ h1, h2 {
 	font-weight: bold;
 }
 #fons-carousel {
-	
 	padding: 10px;
-	
+}
+.tipus-menjar {
+	cursor: pointer;
+}
+.tipus-menjar:hover {
+	opacity: 85%;
+}
+.tipus-menjar:active {
+	opacity: 60%;
+}
+.tipus-menjar span {
+	position: absolute;
+	bottom: 12px;
+	background: white;
+	padding: 5px;
 }
 .carousel-item {
 	height: 130px;
@@ -481,6 +486,9 @@ h1, h2 {
 	#columna3-oferim {
 		margin-top: 20px;
 		padding-left: 0;
+	}
+	#resum-comanda-final {
+		padding-left: 0 !important;
 	}
 }
 
@@ -522,7 +530,10 @@ h1, h2 {
 	padding: 12px;
 }
 .casella-restaurant:hover {
-	opacity: 70%;
+	opacity: 75%;
+}
+.casella-restaurant:active {
+	opacity: 60%;
 }
 
 .columna1 {
@@ -711,22 +722,22 @@ h1, h2 {
 /* Fi Plats */
 
 /* Resum comanda */
-#resum-comanda {
+#resum-comanda-triar {
 	position: -webkit-sticky; /* Safari */
 	position: sticky;
 	top: 0;
 }
-#resum-comanda h1 {
+.resum-comanda h1 {
 	font-family: var(--sans-serif);
 	font-size: 18px;
 	font-weight: bold;
 }
-#resum-comanda h2 {
+.resum-comanda h2 {
 	font-family: var(--sans-serif);
 	font-size: 16px;
 	font-weight: bold;
 }
-#resum-comanda span {
+.resum-comanda span {
 	font-size: 14px;
 }
 #requadre-comanda {
@@ -795,6 +806,23 @@ margin-top: 30px;
 *
 */
 
+/*
+*
+*
+* Pagina de Formulari
+*
+*
+*/
+#resum-comanda-final {
+	padding-left: 80px;
+}
+/*
+*
+*
+* Final Pagina de Formulari
+*
+*
+*/
 
 
 
