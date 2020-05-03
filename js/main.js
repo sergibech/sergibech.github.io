@@ -134,5 +134,15 @@ $('.radiogroup8').change(function(e) {
 	añadir.textContent =$this.attr("titol");
 });
 
+/* Radiogroup 9 es son els calamars que no cal canviar text*/
+
+$('.radiogroup10').change(function(e) {
+	const $this = $(this);
+	var ingredients = document.getElementById("desc-ingredients10");
+	ingredients.textContent = $this.attr("ingredients");
+	var añadir = document.getElementById("añadir10");
+	añadir.textContent =$this.attr("titol");
+});
+
 /* Fi Pagina Restaurant */
 
