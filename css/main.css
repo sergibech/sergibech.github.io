@@ -96,6 +96,12 @@ h1, h2 {
 	vertical-align: bottom;
 }
 
+.icona_buida {
+	color: var(--primaryDarkColor);
+	margin-right: 2px;
+	vertical-align: bottom;
+}
+
 /*Fi barra navegacio suerior */
 
 /* Barra de cerca central */
@@ -107,16 +113,14 @@ h1, h2 {
 	border-radius: 5px;
     display: inline-block;
     padding: 50px;
-    
 }
-
-
 
 .requadre p {
     font-size: 12px;
     margin-top: 20px;
     margin-bottom: 0;
 }
+
 
 #barra-cerca-ciutat {
     margin-top: 5px;
