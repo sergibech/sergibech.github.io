@@ -103,5 +103,36 @@ $('.radiogroup3').change(function(e) {
 	var añadir = document.getElementById("añadir3");
 	añadir.textContent =$this.attr("titol");
 });
+/* Radiogroup 4 es la amanida que no cal canviar text*/
+
+$('.radiogroup5').change(function(e) {
+	const $this = $(this);
+	var ingredients = document.getElementById("desc-ingredients5");
+	ingredients.textContent = $this.attr("ingredients");
+	var añadir = document.getElementById("añadir5");
+	añadir.textContent =$this.attr("titol");
+});
+$('.radiogroup6').change(function(e) {
+	const $this = $(this);
+	var ingredients = document.getElementById("desc-ingredients6");
+	ingredients.textContent = $this.attr("ingredients");
+	var añadir = document.getElementById("añadir6");
+	añadir.textContent =$this.attr("titol");
+});
+$('.radiogroup7').change(function(e) {
+	const $this = $(this);
+	var ingredients = document.getElementById("desc-ingredients7");
+	ingredients.textContent = $this.attr("ingredients");
+	var añadir = document.getElementById("añadir7");
+	añadir.textContent =$this.attr("titol");
+});
+$('.radiogroup8').change(function(e) {
+	const $this = $(this);
+	var ingredients = document.getElementById("desc-ingredients8");
+	ingredients.textContent = $this.attr("ingredients");
+	var añadir = document.getElementById("añadir8");
+	añadir.textContent =$this.attr("titol");
+});
+
 /* Fi Pagina Restaurant */
 
