@@ -1,15 +1,17 @@
 #pagina-interior {
-	background: #fafafa;
+	background: var(--backgroundColor);
 }
 :root {
     --primaryLightColor: #CCFF90;
-    --primaryColor: #7ca8a1;
+    --primaryColor: #99cc60;
     --primaryDarkColor: #386c00;
-    --secondaryLightColor: #f4a363;
+    --secondaryLightColor: #FFAB00;
     --secondaryColor: #FFD740;
+	--secondaryDarkColor: #FFC400;
+	--backgroundColor: #fafafa;
+	--backgroundDarkColor: #bdbdbd;
     --sans-serif: Verdana, Geneva, sans-serif;
     --serif: Georgia, serif;
-	--buttonColor: #99cc60;
 }
 .no-space {
     margin: 0;
@@ -26,7 +28,7 @@ h1, h2, h3, p, a, span, label, input, button {
 
 
 .requadre-informacio {
-	border: 1px solid #bdbdbd;
+	border: 1px solid var(backgroundDarkColor);
 	border-radius: 5px;
 	background: white;
 }
@@ -78,7 +80,7 @@ h1, h2, h3, p, a, span, label, input, button {
 }
 
 .btn-opcions:hover {
-   background-color: #bdbdbd;
+   background-color: var(--backgroundDarkColor);
    color: black;
 }
 
@@ -87,7 +89,7 @@ h1, h2, h3, p, a, span, label, input, button {
 
 }
 .icona {
-	color: var(--buttonColor);
+	color: var(--primaryColor);
 	margin-right: 2px;
 	vertical-align: bottom;
 }
@@ -105,7 +107,7 @@ h1, h2, h3, p, a, span, label, input, button {
 	margin-top: 190px;
     margin-left: 5%;
     margin-right: 5%;
-	background: #fafafa;
+	background: var(--backgroundColor);
 	border-radius: 5px;
     display: inline-block;
     padding: 50px;
@@ -159,11 +161,11 @@ h1, h2, h3, p, a, span, label, input, button {
 }
 
 .btn-buscar:hover {
-   background-color: #FFC400;
+   background-color: var(--secondaryDarkColor);
 }
 
 .btn-buscar:active {
-    background: #FFAB00;
+    background: var(--secondaryLightColor);
 
 }
 /* Fi barra de cerca central */
@@ -256,12 +258,12 @@ h1, h2, h3, p, a, span, label, input, button {
 }
 #ubicacio {
 	font-size: 80px;
-	color: var(--buttonColor);
+	color: var(--primaryColor);
 	
 }
 #ciutat {
 	padding-left: 6px;
-	border-left: 1px solid var(--buttonColor);
+	border-left: 1px solid var(--primaryColor);
 	position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -321,11 +323,12 @@ h1, h2, h3, p, a, span, label, input, button {
 
 .formulari .slider::-webkit-slider-thumb {
 	-webkit-appearance: none;
+	-webkit-appearance: none;
 	appearance: none;
 	width: 10px;
 	height: 25px;
 	border-radius: 10px;
-	background: var(--buttonColor);
+	background: var(--primaryColor);
 	cursor: pointer;
 }
 
@@ -333,7 +336,7 @@ h1, h2, h3, p, a, span, label, input, button {
 	width: 10px;
 	height: 25px;
 	border-radius: 10px;
-	background: var(-buttonColor);
+	background: var(-primaryColor);
 	cursor: pointer;
 }
 
@@ -369,7 +372,7 @@ h1, h2, h3, p, a, span, label, input, button {
   background-color: #eee;
 }
 .grupCheckBox .checkmark {
-	border: 1px solid var(--buttonColor);
+	border: 1px solid var(--primaryColor);
 }
 .grupRadioButton .checkmark {
 	border-radius: 50%;
@@ -383,7 +386,7 @@ h1, h2, h3, p, a, span, label, input, button {
 
 /* Color de fons */
 .formulari .container input:checked ~ .checkmark {
-  background-color: var(--buttonColor);
+  background-color: var(--primaryColor);
 }
 
 /* Creacio de l'indicador */
@@ -437,7 +440,7 @@ h1, h2, h3, p, a, span, label, input, button {
 	cursor: pointer;
 	background-size: cover;
 	background-repeat: no-repeat;
-	border: 2px solid #fafafa;
+	border: 2px solid var(--backgroundColor);
 }
 .tipus-menjar:hover {
 	opacity: 85%;
@@ -474,6 +477,9 @@ h1, h2, h3, p, a, span, label, input, button {
 	}
 	.requadre {
 		margin-top: 100px;
+	}
+	.requadre2 {
+		margin-top: 2px !important;
 	}
 	#columna1-oferim {
 		margin-top: 20px;
@@ -532,10 +538,10 @@ h1, h2, h3, p, a, span, label, input, button {
 	opacity: 100%;
 }
 .icona-navegar-cuines-populars:hover {
-	background: #FFC400;
+	background: var(--secondaryDarkColor);
 }
 .icona-navegar-cuines-populars:active {
-	background: #FFAB00;
+	background: var(--secondaryLightColor);
 }
 /*Fi Cuines populars*/
 
@@ -596,7 +602,7 @@ h1, h2, h3, p, a, span, label, input, button {
 	vertical-align: bottom;
 }
 .icona-estrella-no-marcada {
-	color: #bdbdbd;
+	color: var(--backgroundDarkColor);
 	vertical-align: bottom;
 }
 /* Fi Llista Restaurants */
@@ -629,7 +635,7 @@ h1, h2, h3, p, a, span, label, input, button {
 #requadre-info-restaurant {
 	background: white;
 	display: inline-block;
-	border: 1px solid #bdbdbd;
+	border: 1px solid var(backgroundDarkColor);
 	border-top-left-radius: 0;
 	border-bottom-left-radius: 0;
 	border-top-right-radius: 5px;
@@ -731,7 +737,7 @@ h1, h2, h3, p, a, span, label, input, button {
 }
 .icona-afegir-treure-plat {
 	vertical-align: middle;
-	background: var(--buttonColor);
+	background: var(--primaryColor);
 	border-radius: 50%;
 }
 .comptador-afegir-treure-plat {
@@ -756,9 +762,12 @@ h1, h2, h3, p, a, span, label, input, button {
 	position: sticky;
 	top: 0;
 }
-.resum-comanda h1 {
+.resum-comanda h1, #conjunt-formulari h1 {
 	font-size: 18px;
 	font-weight: bold;
+}
+#conjunt-formulari p {
+	margin-top: 10px;
 }
 .resum-comanda h2 {
 	font-size: 16px;
@@ -815,7 +824,7 @@ margin-top: 30px;
 	border: none;
 }
 .btn-like:hover {
-   background-color: var(--buttonColor);
+   background-color: var(--primaryColor);
 }
 
 .btn-like:active {
@@ -841,6 +850,30 @@ margin-top: 30px;
 #resum-comanda-final {
 	padding-left: 80px;
 }
+#check{
+  margin-top: 2%;
+}
+
+#btnvisa {
+  width: 100px;
+}
+
+#btnmaster {
+  width: 100px;
+}
+
+#btnapple {
+  width: 100px;
+}
+
+#btngoogle {
+  width: 100px;
+}
+
+#btnContinuar {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
 /*
 *
 *
@@ -848,9 +881,65 @@ margin-top: 30px;
 *
 *
 */
-
-
-
+/*
+*
+*
+* Pagina Pagament
+*
+*
+*/
+.requadre2 {
+	margin-top: 75px;
+    margin-left: 5%;
+    margin-right: 5%;
+	background: var(--backgroundColor);
+	border-radius: 5px;
+    display: inline-block;
+    padding: 50px;
+}
+.requadre2 h1 {
+	font-size: 18px;
+	font-weight: bold;
+}
+#btnpagar {
+  margin-top: 2%;
+}
+/*
+*
+*
+* Final Pagina Pagament
+*
+*
+*/
+/*
+*
+*
+* Pagina final
+*
+*
+*/
+.descarrega {
+	cursor: pointer;
+	color: var(--primaryColor);
+	margin-left: 2px;
+	vertical-align: bottom;
+}
+.descarrega:hover {
+	color: var(--primaryDarkColor);
+}
+.descarrega:active {
+	color: #0a3f00;
+}
+/*
+*
+*
+* Final Pagina Final
+*
+*
+*/
+#btnTornar {
+	color: black;
+}
 /*Footer*/
 .page-footer {
     background-color: #222;

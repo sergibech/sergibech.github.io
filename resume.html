@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" type="text/css" href="css/resume.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
@@ -45,7 +44,7 @@
 	</div>
 </div>
 
-<div class="container-fluid amplada" style="margin-top: 30px">
+<div class="container-fluid amplada" id="conjunt-formulari"style="margin-top: 30px">
 	<div class="row">
 		<div class="col-lg-6 col-md-6 col-sm-12 no-space">
 			<h1>Formulario del pedido</h1>
@@ -53,7 +52,7 @@
 			<form action="pay.html">
 			  <div class="form-row">
 			    <div class="col-md-4 mb-3">
-			    	<label for="dataEntrega">Data de entrega</label>
+			    	<label for="dataEntrega">Fecha de entrega</label>
 				    <input type="date" class="form-control" id="dataEntrega" required> 
 				</div>
 				<div class="col-md-4 mb-3">
@@ -123,12 +122,12 @@
 				    </div>
 				</div>
 			  </div>
-			  <div class="form-group formulari grupCheckBox" id="check">
-							<label class="container" style="font-size: 1rem">Acepto los términos y condiciones
-								<input type="checkbox">
-								<span class="checkmark" style="top: 2px"></span>
-							</label>
-			  </div>
+			  <div class="form-check" id="check">
+			      <input class="form-check-input" type="checkbox" value="" id="invalidCheck3" required>
+			      <label class="form-check-label" for="invalidCheck3" id="labelCheck">
+			        Acepto los términos y condiciones
+			      </label>
+			    </div>
 			  <button class="btn btn-buscar sombrejat" type="submit" id="btnContinuar">Continuar</button>
 			</form>
 		</div>
@@ -154,61 +153,99 @@
 								<h2>Total</h2>
 							</div>
 						</div>
-						<div class="row">
+						<div class="row" style="margin-top: 20px">
 							<div class="col-lg-3 col-md-3 col-sm-3">
-								<span>Macarrones</span>
+								<span>Canelones de la casa</span>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2 text-center">
+								<span>Normal</span>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2 text-center">
+								<span>6,50€</span>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-3 text-center">
+								<button class="boto-afegir-treure-plat"><i class="material-icons icona-afegir-treure-plat" style="font-size: 18px">remove</i></button>
+								<span class="comptador-afegir-treure-plat" style="font-size: 14px">9</span>
+								<button class="boto-afegir-treure-plat"><i class="material-icons icona-afegir-treure-plat" style="font-size: 18px">add</i></button>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2 text-right">
+								<span>58,50€</span>
+							</div>
+						</div>
+						<div class="row" style="margin-top: 20px">
+							<div class="col-lg-3 col-md-3 col-sm-3">
+								<span>Canelones de la casa</span>
 							</div>
 							<div class="col-lg-2 col-md-2 col-sm-2 text-center">
 								<span>Vegana</span>
 							</div>
 							<div class="col-lg-2 col-md-2 col-sm-2 text-center">
-								<span>4,46€</span>
+								<span>6,50€</span>
 							</div>
 							<div class="col-lg-3 col-md-3 col-sm-3 text-center">
 								<button class="boto-afegir-treure-plat"><i class="material-icons icona-afegir-treure-plat" style="font-size: 18px">remove</i></button>
-								<span class="comptador-afegir-treure-plat" style="font-size: 14px">4</span>
+								<span class="comptador-afegir-treure-plat" style="font-size: 14px">1</span>
 								<button class="boto-afegir-treure-plat"><i class="material-icons icona-afegir-treure-plat" style="font-size: 18px">add</i></button>
 							</div>
 							<div class="col-lg-2 col-md-2 col-sm-2 text-right">
-								<span>17,84€</span>
+								<span>6,50€</span>
 							</div>
 						</div>
-						<div class="row" style="margin-top: 8px">
+						<div class="row" style="margin-top: 25px">
 							<div class="col-lg-3 col-md-3 col-sm-3">
-								<span>Fanta de naranja</span>
+								<span>Butifarra a la parrilla con judías secas</span>
 							</div>
 							<div class="col-lg-2 col-md-2 col-sm-2 text-center">
-								<span>Light</span>
+								<span>Normal</span>
 							</div>
 							<div class="col-lg-2 col-md-2 col-sm-2 text-center">
-								<span>2,04€</span>
+								<span>5,20€</span>
 							</div>
 							<div class="col-lg-3 col-md-3 col-sm-3 text-center">
 								<button class="boto-afegir-treure-plat"><i class="material-icons icona-afegir-treure-plat" style="font-size: 18px">remove</i></button>
-								<span class="comptador-afegir-treure-plat" style="font-size: 14px">4</span>
+								<span class="comptador-afegir-treure-plat" style="font-size: 14px">9</span>
 								<button class="boto-afegir-treure-plat"><i class="material-icons icona-afegir-treure-plat" style="font-size: 18px">add</i></button>
 							</div>
 							<div class="col-lg-2 col-md-2 col-sm-2 text-right">
-								<span>8,16€</span>
+								<span>46,80€</span>
 							</div>
 						</div>
-						<div class="row" style="margin-top: 8px">
+						<div class="row" style="margin-top: 25px">
 							<div class="col-lg-3 col-md-3 col-sm-3">
-								<span>Flan de huevo</span>
+								<span>Butifarra a la parrilla con judías secas</span>
 							</div>
 							<div class="col-lg-2 col-md-2 col-sm-2 text-center">
-								<span>Celíaca</span>
+								<span>Vegana</span>
 							</div>
 							<div class="col-lg-2 col-md-2 col-sm-2 text-center">
-								<span>1,09€</span>
+								<span>5,20€</span>
 							</div>
 							<div class="col-lg-3 col-md-3 col-sm-3 text-center">
 								<button class="boto-afegir-treure-plat"><i class="material-icons icona-afegir-treure-plat" style="font-size: 18px">remove</i></button>
-								<span class="comptador-afegir-treure-plat" style="font-size: 14px">4</span>
+								<span class="comptador-afegir-treure-plat" style="font-size: 14px">1</span>
 								<button class="boto-afegir-treure-plat"><i class="material-icons icona-afegir-treure-plat" style="font-size: 18px">add</i></button>
 							</div>
 							<div class="col-lg-2 col-md-2 col-sm-2 text-right">
-								<span>4,36€</span>
+								<span>5,20€</span>
+							</div>
+						</div>
+						<div class="row" style="margin-top: 25px">
+							<div class="col-lg-3 col-md-3 col-sm-3">
+								<span>Fruta del día</span>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2 text-center">
+								<span>Normal</span>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2 text-center">
+								<span>3,80€</span>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-3 text-center">
+								<button class="boto-afegir-treure-plat"><i class="material-icons icona-afegir-treure-plat" style="font-size: 18px">remove</i></button>
+								<span class="comptador-afegir-treure-plat" style="font-size: 14px">10</span>
+								<button class="boto-afegir-treure-plat"><i class="material-icons icona-afegir-treure-plat" style="font-size: 18px">add</i></button>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2 text-right">
+								<span>38,00€</span>
 							</div>
 						</div>
 						<hr>
@@ -217,7 +254,7 @@
 								<span style="font-size: 16px"><strong>Precio total</strong></span>
 							</div>
 							<div class="col-lg-2 col-md-2 col-sm-2 text-right">
-								<span><strong>30,36€</strong></span>
+								<span><strong>155,00€</strong></span>
 							</div>
 						</div>
 					</div>
@@ -250,14 +287,8 @@
 		<div class="footer-copyright text-center">© 2020 Copyright: clickandeat.com</div>
 	</div>
 </footer>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="js/resume.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js\main.js"></script>
 </body>
 </html>
