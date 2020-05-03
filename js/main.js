@@ -144,5 +144,15 @@ $('.radiogroup10').change(function(e) {
 	añadir.textContent =$this.attr("titol");
 });
 
+/* Radiogroup 11  es les fruites del dias que no cal canviar text*/
+
+$('.radiogroup12').change(function(e) {
+	const $this = $(this);
+	var ingredients = document.getElementById("desc-ingredients12");
+	ingredients.textContent = $this.attr("ingredients");
+	var añadir = document.getElementById("añadir12");
+	añadir.textContent =$this.attr("titol");
+});
+
 /* Fi Pagina Restaurant */
 
