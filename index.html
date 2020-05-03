@@ -7,7 +7,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" type="text/css" href="css\main.css">
    
@@ -45,13 +44,13 @@
     </div>
     <div class="requadre sombrejat">
         <div style="display: inline-block">
-            <h1>Tu comida saludable en un solo click</h1>
+            <h1 id="lema-empresa">Tu comida saludable en un solo click</h1>
             <p>Introduce tu ciudad para encontrar restaurantes cerca</p>
             <div class="input-group md-form form-sm form-2 pl-0 sombrejat" id="barra-cerca-ciutat">
-                <input class="form-control buscador" type="text" placeholder="Introduce tu ciudad" aria-label="Buscar">
+                <input class="form-control buscador" id ="introudir-ciutat" type="text" placeholder="Introduce tu ciudad" aria-label="Buscar">
                 <div class="input-group-append">
                     <form action="search.html">
-                            <button class="btn btn-buscar" type="submit">Buscar</button>
+                            <button class="btn btn-buscar" id="boto-buscar" type="submit">Buscar</button>
                     </form>
                 </div>
             </div>
@@ -59,27 +58,27 @@
     </div>
 </div>
 
-<div class="container-fluid amplada" style="margin-top: 30px;">
+<div class="container-fluid amplada" id="grid1">
     <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12 no-space" >
-            <h1 id="ofrecemos">Qué ofrecemos?</h1>
+            <h1 id="ofrecemos">¿Qué ofrecemos?</h1>
         </div>
 	</div>
-	<div class="row" id="grid1">
+	<div class="row" style="margin-top: 15px">
 		<div class="col-lg-4 col-md-4 col-sm-12" id="columna1-oferim">
-			<h2>Dietas especiales</h2>
+			<h2>Menús personalizados</h2>
 			<img class="sombrejat" src="img/vegano.jpg" width="150px" height="150px" alt="imatge">
-			<p>En Click & Eat puedes encontrar una gran oferta de restaurantes de comida saludable. Además, te damos la posibilidad de escoger diferentes versiones de los menús, así que no te preocupes, ya seas vegano o tengas cualquier tipo de incompatibilidad con algún alimento aquí vas a encontrar un menú que te haga feliz!</p>
+			<p>En Click & Eat puedes encontrar una gran variedad de restaurantes de comida saludable. Además, te damos la posibilidad de personalizar cada plato según tus preferencias y gustos.<br>¡Te encantará!</p>
 		</div>
 		<div class="col-lg-4 col-md-4 col-sm-12" id="columna2-oferim">
 			<h2>Pedidos periódicos</h2>
 			<img class="sombrejat" src="img/periodico.jpg" width="150px" height="150px" alt="imatge" align="center">
-			<p>Una de las grandes novedades para nuestros usuarios registrados es que les damos la oportunidad de programar sus pedidos de forma periódica. Así que ya lo sabes, si eres un usuario frecuente o bien una empresa que necesita comida para sus empleados, regístrate y empieza a disfrutar de todas las ventajas!</p>
+			<p>Una de las grandes novedades es la posibilidad de programar pedidos de forma periódica.<br>¡Regístrate y empieza a disfrutar de todas las ventajas!</p>
 		</div>
 		<div class="col-lg-4 col-md-4 col-sm-12" id="columna3-oferim">
 			<h2>Ofertas</h2>
 			<img class="sombrejat" src="img/ofertas.png" width="150px" height="150px" alt="imatge">
-			<p>Cada semanas hay diferentes productos en oferta por un tiempo limitado, así que date prisa y usa los filtro de búsqueda avanzada para encontrarlas más fácilmente. ¿ Te las vas a perder ?</p>	
+			<p>Echa un ojo a las ofertas y consigue grandes descuentos exclusivos en nuestra página.<br>¿Te las vas a perder?</p>	
 		</div>
 	</div>
 </div>
@@ -112,6 +111,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="js\main.js"></script>
+	<script src="js\intro-js.js"></script>
 </body>
 
 </html>

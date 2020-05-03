@@ -1,4 +1,4 @@
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+/*Barra navegacio superior*/
 function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -7,6 +7,7 @@ function myFunction() {
     x.className = "topnav";
   }
 }
+/*Fi Barra navegacio superior*/
 
 /* Barres preu minim i maxim*/
 $(document).ready(function() {
@@ -153,6 +154,3 @@ $('.radiogroup12').change(function(e) {
 	var añadir = document.getElementById("añadir12");
 	añadir.textContent =$this.attr("titol");
 });
-
-/* Fi Pagina Restaurant */
-

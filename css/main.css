@@ -4,7 +4,7 @@
 :root {
     --primaryLightColor: #CCFF90;
     --primaryColor: #7ca8a1;
-    --primaryDarkColor: #0a7879;
+    --primaryDarkColor: #386c00;
     --secondaryLightColor: #f4a363;
     --secondaryColor: #FFD740;
     --sans-serif: Verdana, Geneva, sans-serif;
@@ -18,13 +18,8 @@
 /* Estil dels text i imatges*/
 
 
-p, a, span, label, input, button {
+h1, h2, h3, p, a, span, label, input, button {
     font-family: var(--sans-serif);
-}
-
-
-h1, h2 {
-    font-family: var(--serif);
 }
 
 /* Fi estil dels text*/
@@ -61,10 +56,10 @@ h1, h2 {
 	text-decoration: none;
 }
 #columna-logo span {
-    font: 400 100px/1.3 'Oleo Script', Helvetica, sans-serif;
+    font-family: Goudy Old Style, Helvetica, sans-serif;
     color: black;
-    text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
-    font-size: 50px;
+	font-weight: bold;
+    font-size: 40px;
 } 
 
 #columna-logo a:hover{
@@ -84,6 +79,7 @@ h1, h2 {
 
 .btn-opcions:hover {
    background-color: #bdbdbd;
+   color: black;
 }
 
 .btn-opcions:active {
@@ -121,6 +117,9 @@ h1, h2 {
     margin-bottom: 0;
 }
 
+#lema-empresa {
+	font-family: var(--serif);
+}
 
 #barra-cerca-ciutat {
     margin-top: 5px;
@@ -132,7 +131,6 @@ h1, h2 {
 
 .buscador {
 	height: 100%;
-	font-family: var(--sans-serif);
 	font-size: 20px;
     background-color: white;
 	border-top-left-radius: 5px;
@@ -205,8 +203,6 @@ h1, h2 {
 
 /*Graella amb les coses que ofreim*/
 
-
-
 #columna1-oferim {
     margin: 0;
     padding-left: 0;
@@ -224,18 +220,21 @@ h1, h2 {
     padding-right: 0;
     margin: 0;
 }
+
+
+
 #grid1 p {
 	text-align: justify;
     margin-top: 8px;
 }
 #grid1 {
-	padding-top: 10px;
+	padding-top: 35px;
 }
 #grid1 h1 {
-	font-size: 35px;
+	font-size: 30px;
 }
 #grid1 h2{
-    font-size: 25px;
+    font-size: 20px;
 }
 
 /*Fi graella amb les coses que oferim*/
@@ -294,17 +293,14 @@ h1, h2 {
 	padding: 15px;
 }
 #filtres-cerca-avancada h1 {
-	font-family: var(--sans-serif);
 	font-size: 18px;
 	font-weight: bold;
 }
 #filtres-cerca-avancada h2 {
-	font-family: var(--sans-serif);
 	font-size: 16px;
 	font-weight: bold;
 }
 #filtres-cerca-avancada h3 {
-	font-family: var(--sans-serif);
 	font-size: 14px;
 }
 
@@ -431,7 +427,6 @@ h1, h2 {
 
 /*Cuines populars*/
 #cuines-populars h1 {
-	font-family: var(--sans-serif);
 	font-size: 18px;
 	font-weight: bold;
 }
@@ -440,6 +435,9 @@ h1, h2 {
 }
 .tipus-menjar {
 	cursor: pointer;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border: 2px solid #fafafa;
 }
 .tipus-menjar:hover {
 	opacity: 85%;
@@ -520,6 +518,25 @@ h1, h2 {
 .carousel-inner .carousel-item-left{ 
   transform: translateX(0);
 }
+.icona-navegar-cuines-populars {
+	vertical-align: middle;
+	font-size: 35px;
+	color: black;
+	background: var(--secondaryColor);
+	border-radius: 50%;
+}
+.carousel-control-prev {
+	opacity: 100%;
+}
+.carousel-control-next {
+	opacity: 100%;
+}
+.icona-navegar-cuines-populars:hover {
+	background: #FFC400;
+}
+.icona-navegar-cuines-populars:active {
+	background: #FFAB00;
+}
 /*Fi Cuines populars*/
 
 /* Llista Restaurants */
@@ -563,7 +580,6 @@ h1, h2 {
 }
 
 #restaurants-disponibles h2 {
-	font-family: var(--sans-serif);
 	font-size: 20px;
 }
 
@@ -574,6 +590,14 @@ h1, h2 {
 }
 #restaurants-disponibles i {
 	font-size: 20px;
+}
+.icona-estrella-marcada {
+	color: var(--primaryDarkColor);
+	vertical-align: bottom;
+}
+.icona-estrella-no-marcada {
+	color: #bdbdbd;
+	vertical-align: bottom;
 }
 /* Fi Llista Restaurants */
 
@@ -652,6 +676,9 @@ h1, h2 {
 	top: 0;
 	z-index: 1;
 }
+#barra a {
+	color: black;
+}
 .seccio-plat {
 	margin-top: 25px;
 }
@@ -684,7 +711,6 @@ h1, h2 {
 	padding-right: 20px;
 }
 #nom-plat {
-	font-family: var(--sans-serif);
 	font-size: 20px;
 	font-weight: bold; 
 }
@@ -718,7 +744,7 @@ h1, h2 {
 }
 
 .icona-afegir-treure-plat:active {
-    background: #9d9d9d;
+    background: #0a3f00;
 }
 
 
@@ -731,12 +757,10 @@ h1, h2 {
 	top: 0;
 }
 .resum-comanda h1 {
-	font-family: var(--sans-serif);
 	font-size: 18px;
 	font-weight: bold;
 }
 .resum-comanda h2 {
-	font-family: var(--sans-serif);
 	font-size: 16px;
 	font-weight: bold;
 }
@@ -760,7 +784,6 @@ h1, h2 {
 	vertical-align: bottom;
 }
 #valoracions h1 {
-	font-family: var(--sans-serif);
 	font-size: 25px;
 }
 /* Fi Valoracions */
@@ -770,7 +793,6 @@ h1, h2 {
 margin-top: 30px;
 }
 #comentaris h1 {
-	font-family: var(--sans-serif);
 	font-size: 25px;
 }
 .resposta {
@@ -782,8 +804,8 @@ margin-top: 30px;
 }
 .btn-like {
 	text-decoration: none;
-    background-color: #dc3545;
-    color: white;
+    background-color: var(--primaryLightColor);
+    color: black;
     height: 100%;
     font-size: 16px;
 	border-top-left-radius: 0;
@@ -793,11 +815,11 @@ margin-top: 30px;
 	border: none;
 }
 .btn-like:hover {
-   background-color: #c82333;
+   background-color: var(--buttonColor);
 }
 
 .btn-like:active {
-    background: #9A1925;
+    background: var(--primaryDarkColor);
 }
 /* Fi Comentaris */
 
