@@ -5,7 +5,7 @@
     --primaryLightColor: #CCFF90;
     --primaryColor: #99cc60;
     --primaryDarkColor: #386c00;
-    --secondaryLightColor: #FFAB00;
+    --secondaryPlusDarkColor: #FFAB00;
     --secondaryColor: #FFD740;
 	--secondaryDarkColor: #FFC400;
 	--backgroundColor: #fafafa;
@@ -165,7 +165,7 @@ h1, h2, h3, p, a, span, label, input, button {
 }
 
 .btn-buscar:active {
-    background: var(--secondaryLightColor);
+    background: var(--secondaryPlusDarkColor);
 
 }
 /* Fi barra de cerca central */
@@ -541,7 +541,7 @@ h1, h2, h3, p, a, span, label, input, button {
 	background: var(--secondaryDarkColor);
 }
 .icona-navegar-cuines-populars:active {
-	background: var(--secondaryLightColor);
+	background: var(--secondaryPlusDarkColor);
 }
 /*Fi Cuines populars*/
 
