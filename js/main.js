@@ -89,6 +89,8 @@ $('.radiogroup').change(function(e) {
 	ingredients.textContent = $this.attr("ingredients");
 	var añadir = document.getElementById("añadir");
 	añadir.textContent =$this.attr("titol");
+	var quantitat = document.getElementById("quant");
+	quantitat.textContent = $this.attr("quantitat");
 });
 $('.radiogroup2').change(function(e) {
 	const $this = $(this);
@@ -96,6 +98,8 @@ $('.radiogroup2').change(function(e) {
 	ingredients.textContent = $this.attr("ingredients");
 	var añadir = document.getElementById("añadir2");
 	añadir.textContent =$this.attr("titol");
+	var quantitat = document.getElementById("quant2");
+	quantitat.textContent = $this.attr("quantitat");
 });
 $('.radiogroup3').change(function(e) {
 	const $this = $(this);
@@ -103,6 +107,8 @@ $('.radiogroup3').change(function(e) {
 	ingredients.textContent = $this.attr("ingredients");
 	var añadir = document.getElementById("añadir3");
 	añadir.textContent =$this.attr("titol");
+	var quantitat = document.getElementById("quant3");
+	quantitat.textContent = $this.attr("quantitat");
 });
 /* Radiogroup 4 es la amanida que no cal canviar text*/
 
@@ -112,13 +118,18 @@ $('.radiogroup5').change(function(e) {
 	ingredients.textContent = $this.attr("ingredients");
 	var añadir = document.getElementById("añadir5");
 	añadir.textContent =$this.attr("titol");
+	var quantitat = document.getElementById("quant5");
+	quantitat.textContent = $this.attr("quantitat");
 });
+
 $('.radiogroup6').change(function(e) {
 	const $this = $(this);
 	var ingredients = document.getElementById("desc-ingredients6");
 	ingredients.textContent = $this.attr("ingredients");
 	var añadir = document.getElementById("añadir6");
 	añadir.textContent =$this.attr("titol");
+	var quantitat = document.getElementById("quant6");
+	quantitat.textContent = $this.attr("quantitat");
 });
 $('.radiogroup7').change(function(e) {
 	const $this = $(this);
@@ -126,6 +137,8 @@ $('.radiogroup7').change(function(e) {
 	ingredients.textContent = $this.attr("ingredients");
 	var añadir = document.getElementById("añadir7");
 	añadir.textContent =$this.attr("titol");
+	var quantitat = document.getElementById("quant7");
+	quantitat.textContent = $this.attr("quantitat");
 });
 $('.radiogroup8').change(function(e) {
 	const $this = $(this);
@@ -133,6 +146,8 @@ $('.radiogroup8').change(function(e) {
 	ingredients.textContent = $this.attr("ingredients");
 	var añadir = document.getElementById("añadir8");
 	añadir.textContent =$this.attr("titol");
+	var quantitat = document.getElementById("quant8");
+	quantitat.textContent = $this.attr("quantitat");
 });
 
 /* Radiogroup 9 es son els calamars que no cal canviar text*/
@@ -143,6 +158,8 @@ $('.radiogroup10').change(function(e) {
 	ingredients.textContent = $this.attr("ingredients");
 	var añadir = document.getElementById("añadir10");
 	añadir.textContent =$this.attr("titol");
+	var quantitat = document.getElementById("quant10");
+	quantitat.textContent = $this.attr("quantitat");
 });
 
 /* Radiogroup 11  es les fruites del dias que no cal canviar text*/
@@ -153,4 +170,6 @@ $('.radiogroup12').change(function(e) {
 	ingredients.textContent = $this.attr("ingredients");
 	var añadir = document.getElementById("añadir12");
 	añadir.textContent =$this.attr("titol");
+	var quantitat = document.getElementById("quant12");
+	quantitat.textContent = $this.attr("quantitat");
 });

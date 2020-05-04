@@ -160,6 +160,19 @@ h1, h2, h3, p, a, span, label, input, button {
 	border: none;
 }
 
+.btn-buscar-desactivat {
+    text-decoration: none;
+    background-color: var(--secondaryDarkColor);
+    color: black;
+    height: 100%;
+    font-size: 20px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border: none;
+}
+
 .btn-buscar:hover {
    background-color: var(--secondaryDarkColor);
 }
