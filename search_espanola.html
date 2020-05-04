@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <title>Click And Eat | Comida saludable a domicilio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="css\main.css">
+	
+	
+	
+</head>
+
+<body id="pagina-interior">
+
+<div style="background: #99cc60">
+	<div class="container-fluid amplada" style="padding-bottom: 1%; padding-top:1%">
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-12 fila-centrada" style="padding: 0" id="columna-logo">
+					<a href="index.html" style="vertical-align: middle"> <img src="img/logo.png" alt="logo" style="height: auto; width:80px; padding-right:2%; vertical-align: middle"><span style="vertical-align: middle">Click & Eat</span></a> 
+				</div>
+			<div class="col-lg-8 col-md-8 col-sm-12 fila-centrada" style="justify-content: flex-end; padding: 0">
+				<nav class="navbar navbar-expand-lg" style= "padding: 0">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon">Menú</span>
+					</button>
+					<div class="collapse navbar-collapse text-center" id="navbarSupportedContent2">
+						<ul class="navbar-nav ml-auto fila-centrada">
+							<li class="nav-item active">
+								<a href="properament.html" class="btn btn-opcions sombrejat"><i class="material-icons icona">shopping_cart</i>Mi pedido</a>
+							</li>
+							<li class="nav-item active">
+								<a href="properament.html" class="btn btn-opcions sombrejat"><i class="material-icons icona">assignment</i>Gestionar mis pedidos</a>
+							</li>
+							<li class="nav-item active">
+								<a href="properament.html" class="btn btn-opcions sombrejat"><i class="material-icons icona">person</i>Registrarse o iniciar sesión</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid amplada" style="margin-top: 40px">
+	<div class="row">
+		<div class="col-lg-3 col-md-3 col-sm-12 no-space requadre-informacio sombrejat">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-3 col-md-3 col-sm-12 no-space">
+						<i class="material-icons centrat-vertical" id="ubicacio">place</i>
+					</div>
+					<div class="col-lg-9 col-md-9 col-sm-12 no-space">
+						<div id="ciutat">
+							<p style="margin-top: 0">Buscando en <strong>Barcelona</strong></p>
+							<a href="#" style="margin-bottom: 0">Cambiar ciudad de entrega</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-9 col-md-9 col-sm-12 columna-dreta">
+			<div class="input-group md-form form-sm form-2 pl-0 sombrejat" id="barra-cerca-restaurant">
+                <input class="form-control buscador" type="text" placeholder="Buscar restaurante o cocina" aria-label="Buscar">
+                <div class="input-group-append">
+                    <form action="">
+                            <button class="btn btn-buscar" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+		</div>
+	</div>
+	
+	<div class="row" style="margin-top: 30px;">
+		<div class="col-lg-3 col-md-3 col-sm-12 no-space">
+			<div id="filtres-cerca-avancada">
+				<div id="capcalera">
+					<h1>Filtros</h1>
+					<a href="">Restablecer filtros</a>
+				</div>
+				<div class="sombrejat requadre-informacio" id="box-advanced-filters">
+					<form action="">
+						<div class="form-group" style="cursor: pointer">
+							<h2>Cocinas</h2>
+							<select class="form-control" id="category" style="cursor: pointer">
+								<option>Española</option>
+								<option>Todas</option>
+								<option>Asiática</option>
+								<option>Turca</option>
+								<option>Italiana</option>
+								<option>Mediterránea</option>
+							</select>
+						</div>
+						<hr>
+						<div class="form-group formulari grupCheckBox">
+							<h2>Dietas</h2>
+							<label class="container" style="font-size: 14px">Halal
+								<input type="checkbox">
+								<span class="checkmark"></span>
+							</label>
+							<label class="container" style="font-size: 14px">Sin gluten
+							<input type="checkbox">
+							<span class="checkmark"></span>
+							</label>
+							<label class="container" style="font-size: 14px">Vegetariana
+							  <input type="checkbox">
+							  <span class="checkmark"></span>
+							</label>
+							<label class="container" style="font-size: 14px">Vegana
+							  <input type="checkbox">
+							  <span class="checkmark"></span>
+							</label>
+						</div>
+						<hr>
+						<div>
+							<h2>Precio</h2>
+							<div class="form-group formulari">
+								<h3>Precio mínimo</h3>
+								<div>
+									<input type="range" min="0" max="500" value="0" class="slider" id="preu-min">
+									<span id="preu-min-span"></span>
+								</div>
+							</div>
+							<div class="form-group formulari">
+								<h3>Precio máximo</h3>
+								<div>
+									<input type="range" min="0" max="500" value="500" class="slider" id="preu-max"/>
+									<span id="preu-max-span"></span>
+								</div>
+							</div>
+						</div>
+						<hr>
+						<div>
+							<h2>Valoración</h2>
+							<div class="form-group formulari">
+								<h3>Valoración mínima</h3>
+								<div>
+									<input type="range" min="2" max="10" value="0" class="slider" id="val-min">
+									<span id="val-min-span"></span>
+								</div>
+							</div>
+							<div class="form-group formulari">
+								<h3>Valoración máxima</h3>
+								<div>
+									<input type="range" min="2" max="10" value="10" class="slider" id="val-max"/>
+									<span id="val-max-span"></span>
+								</div>
+							</div>
+						</div>
+						<hr>
+						<div class="form-group">
+							<h2>Fecha de entrega</h2>
+							<input type="date" class="form-control" id="dataEntrega">
+						</div>
+						<hr>
+						<div class="form-group formulari grupRadioButton">
+							<h2>Ofertas</h2>
+							<label class="container" style="font-size: 14px">Mostrar ofertas
+								<input type="radio" checked="checked" name="radio">
+									<span class="checkmark"></span>
+							</label>
+							<label class="container" style="font-size: 14px">No mostrar ofertas
+							  <input type="radio" name="radio">
+							  <span class="checkmark"></span>
+							</label>
+							<label class="container" style="font-size: 14px">Mostrar solamente las ofertas
+							  <input type="radio" name="radio">
+							  <span class="checkmark"></span>
+							</label>
+							<label class="container" style="font-size: 14px">Mostrar solamente las ofertas semanales
+							  <input type="radio" name="radio">
+							  <span class="checkmark"></span>
+							</label>
+						</div>
+						<hr>
+						<div class="form-group text-center">
+							<button type="submit" class="btn btn-buscar sombrejat" style="border-radius: 4px">Filtrar</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-9 col-md-9 col-sm-12 no-space">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 columna-dreta">						
+						<div class="container no-space" id="cuines-populars">
+							<h1 class="">Cocinas populares</h1>
+							<div class="row mx-auto my-auto" id="fons-carousel" style="padding: 0">
+								<div id="recipeCarousel" class="carousel slide w-100" data-interval="false" data-ride="carousel" style="padding-left: 30px; padding-right: 30px">
+									<div class="carousel-inner w-100" role="listbox">
+										<div class="carousel-item active">
+											<div class="col-md-4">
+												<div class="card card-body sombrejat tipus-menjar" style="background-image: url('img/italiana.png');">
+													<span class="sombrejat requadre-informacio">Italiana</span>
+												</div>
+											 </div>
+										</div>
+										<div class="carousel-item">
+											<div class="col-md-4">
+												<div class="card card-body sombrejat tipus-menjar" style="background-image: url('img/mediterranea.png')">
+													<span class="sombrejat requadre-informacio">Mediterránea</span>
+												</div>
+											</div>
+										</div>
+										<div class="carousel-item">
+											<div class="col-md-4">
+												<div class="card card-body sombrejat tipus-menjar" style="background-image: url('img/española.jpg')">
+													<span class="sombrejat requadre-informacio">Española</span>
+												</div>
+											</div>
+										</div>
+										<div class="carousel-item">
+											<div class="col-md-4">
+												<div class="card card-body sombrejat tipus-menjar" style="background-image: url('img/asiatica.png')">
+													<span class="sombrejat requadre-informacio">Asiática</span>
+												</div>
+											</div>
+										</div>
+										<div class="carousel-item">
+											<div class="col-md-4">
+												<div class="card card-body sombrejat tipus-menjar" style="background-image: url('img/turca.jpg')">
+													<span class="sombrejat requadre-informacio">Turca</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
+										<i class="material-icons icona-navegar-cuines-populars">navigate_before</i>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next">
+										<i class="material-icons icona-navegar-cuines-populars">navigate_next</i>
+										<span class="sr-only">Next</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					
+					<div class="col-lg-12 col-md-12 col-sm-12 columna-dreta">
+						<div class="container-fluid" id="restaurants-disponibles">
+							<div class="row" style="margin-top: 30px">
+								<div class="col-lg-8 col-md-8 col-sm-12 no-space">
+									<h1>Restaurantes encontrados</h1>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-12  no-space" id="ordenar-por">
+									<div class="btn-group">	
+										<button type="button" class="btn btn-opcions dropdown-toggle sombrejat" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Ordenar por</button>
+									    <div class="dropdown-menu dropdown-menu-right">
+											<button class="dropdown-item" type="button">Valoración</button>
+											<button class="dropdown-item" type="button">Precio ascendente</button>
+											<button class="dropdown-item" type="button">Precio descendente</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-4 col-md-4 col-sm-12 columna1">
+									<div class="casella-restaurant sombrejat requadre-informacio">
+										<a href="restaurant.html">
+											<h2>Terra</h2>
+											<img class="img-fluid sombrejat img-restaurant" src="img/restaurant3.jpg" alt="foto restaurante"/>
+											<div class="contaniner-fluid">
+												<div class="row" style="margin-top: 5px">
+													<div class="col-lg-2 col-md-2 col-sm-2">
+														<i class="material-icons icona" style="color: grey">restaurant</i>
+													</div>
+													<div class="col-lg-10 col-md-10 col-sm-10 no-space">
+														<span>Catalana</span>
+														<span>·</span>
+														<span>Mediterránea</span>
+													</div>
+												</div>
+												<div class="row" style="margin-top: 5px">
+													<div class="col-lg-2 col-md-2 col-sm-2">
+														<i class="material-icons icona" style="color: #0CA0C6">chat</i>
+													</div>
+													<div class="col-lg-10 col-md-10 col-sm-10 no-space">
+														<span><i class="material-icons icona-estrella-marcada">grade</i></span>
+														<span><i class="material-icons icona-estrella-marcada">grade</i></span>
+														<span><i class="material-icons icona-estrella-marcada">grade</i></span>
+														<span><i class="material-icons icona-estrella-no-marcada">grade</i></span>
+														<span><i class="material-icons icona icona-estrella-no-marcada">grade</i></span>
+														<span>(19 comentarios)</span>
+													</div>
+												</div>
+												<div class="row" style="margin-top: 5px">
+													<div class="col-lg-2 col-md-2 col-sm-2">
+														<i class="material-icons icona" style="color: orange">local_offer</i>
+													</div>
+													<div class="col-lg-10 col-md-10 col-sm-10 text-justify" style="padding-left: 0">
+														<span>Por pedidos superiores a 50€ regalamos la bebida.</span>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-12 columna2">
+									<div class="casella-restaurant sombrejat requadre-informacio">
+										<a href="restaurant.html">
+											<h2>Casa Agustí</h2>
+											<img class="img-fluid sombrejat img-restaurant" src="img/restaurant4.jpg" alt="foto restaurante"/>
+											<div class="contaniner-fluid">
+												<div class="row" style="margin-top: 5px">
+													<div class="col-lg-2 col-md-2 col-sm-2">
+														<i class="material-icons icona" style="color: grey">restaurant</i>
+													</div>
+													<div class="col-lg-10 col-md-10 col-sm-10 no-space">
+														<span>Catalana</span>
+														<span>·</span>
+														<span>Española</span>
+													</div>
+												</div>
+												<div class="row" style="margin-top: 5px">
+													<div class="col-lg-2 col-md-2 col-sm-2">
+														<i class="material-icons icona" style="color: #0CA0C6">chat</i>
+													</div>
+													<div class="col-lg-10 col-md-10 col-sm-10 no-space">
+														<span><i class="material-icons icona-estrella-marcada">grade</i></span>
+														<span><i class="material-icons icona-estrella-marcada">grade</i></span>
+														<span><i class="material-icons icona-estrella-marcada">grade</i></span>
+														<span><i class="material-icons icona-estrella-marcada">grade</i></span>
+														<span><i class="material-icons icona icona-estrella-no-marcada">grade</i></span>
+														<span>(3 comentarios)</span>
+													</div>
+												</div>
+												<div class="row" style="margin-top: 5px">
+													<div class="col-lg-2 col-md-2 col-sm-2">
+														<i class="material-icons icona" style="color: orange">local_offer</i>
+													</div>
+													<div class="col-lg-10 col-md-10 col-sm-10 text-justify" style="padding-left: 0">
+														<span>Por pedidos superiores a 20€ envío gratis.</span>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-12 columna3">
+									<div class="casella-restaurant sombrejat requadre-informacio">
+										<a href="restaurant.html">
+											<h2>Freixa Tradició</h2>
+											<img class="img-fluid sombrejat img-restaurant" src="img/restaurant5.png" alt="foto restaurante"/>
+											<div class="contaniner-fluid">
+												<div class="row" style="margin-top: 5px">
+													<div class="col-lg-2 col-md-2 col-sm-2">
+														<i class="material-icons icona" style="color: grey">restaurant</i>
+													</div>
+													<div class="col-lg-10 col-md-10 col-sm-10 no-space">
+														<span>Tradicional</span>
+														<span>·</span>
+														<span>Catalana</span>
+													</div>
+												</div>
+												<div class="row" style="margin-top: 5px">
+													<div class="col-lg-2 col-md-2 col-sm-2">
+														<i class="material-icons icona" style="color: #0CA0C6">chat</i>
+													</div>
+													<div class="col-lg-10 col-md-10 col-sm-10 no-space">
+														<span><i class="material-icons icona-estrella-marcada">grade</i></span>
+														<span><i class="material-icons icona-estrella-marcada">grade</i></span>
+														<span><i class="material-icons icona-estrella-marcada">grade</i></span>
+														<span><i class="material-icons icona-estrella-no-marcada">grade</i></span>
+														<span><i class="material-icons icona icona-estrella-no-marcada">grade</i></span>
+														<span>(5 comentarios)</span>
+													</div>
+												</div>
+												<div class="row" style="margin-top: 5px">
+													<div class="col-lg-2 col-md-2 col-sm-2">
+														<i class="material-icons icona" style="color: orange">local_offer</i>
+													</div>
+													<div class="col-lg-10 col-md-10 col-sm-10 text-justify" style="padding-left: 0">
+														<span>Por pedidos superiores a 20€ envío gratis.</span>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-4 col-md-4 col-sm-12 columna3">
+									<div class="casella-restaurant sombrejat requadre-informacio">
+										<a href="restaurant.html">
+											<h2>El Chato </h2>
+											<img class="img-fluid sombrejat img-restaurant" src="img/restaurant8.jpg" alt="foto restaurante"/>
+											<div class="contaniner-fluid">
+												<div class="row" style="margin-top: 5px">
+													<div class="col-lg-2 col-md-2 col-sm-2">
+														<i class="material-icons icona" style="color: grey">restaurant</i>
+													</div>
+													<div class="col-lg-10 col-md-10 col-sm-10 no-space">
+														<span>Vasca</span>
+														<span>·</span>
+														<span>Mediterránea</span>
+													</div>
+												</div>
+												<div class="row" style="margin-top: 5px">
+													<div class="col-lg-2 col-md-2 col-sm-2">
+														<i class="material-icons icona" style="color: #0CA0C6">chat</i>
+													</div>
+													<div class="col-lg-10 col-md-10 col-sm-10 no-space">
+														<span><i class="material-icons icona-estrella-marcada">grade</i></span>
+														<span><i class="material-icons icona-estrella-marcada">grade</i></span>
+														<span><i class="material-icons icona-estrella-marcada">grade</i></span>
+														<span><i class="material-icons icona-estrella-marcada">grade</i></span>
+														<span><i class="material-icons icona icona-estrella-no-marcada">grade</i></span>
+														<span>(14 comentarios)</span>
+													</div>
+												</div>
+												<div class="row" style="margin-top: 5px">
+													<div class="col-lg-2 col-md-2 col-sm-2">
+														<i class="material-icons icona" style="color: orange">local_offer</i>
+													</div>
+													<div class="col-lg-10 col-md-10 col-sm-10 text-justify" style="padding-left: 0">
+														<span>Menú del día rebajado un 10% y envío gratis para una comanda mínima de 2 menús.</span>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer class="page-footer">
+	<div class="container-fluid amplada">
+		<div class="row">
+			<div class="col-lg-5 col-md-5 col-sm-12 vertical no-space">
+				<h1>Sobre nosotros</h1>
+					<a href="properament.html">Preguntas frecuentes</a>
+					<a href="properament.html">Contacto</a>
+					<a href="properament.html">Quiénes somos</a>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12 vertical" style="padding-left: 60px">
+				<h1>Legal</h1>
+					<a href="properament.html">Términos legales</a>
+					<a href="properament.html">Privacidad</a>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-12 no-space text-right">
+				<h1>Redes sociales</h1>
+					<a href="https:\\www.instagram.com"><img id="instagram" width="40px" height="40px" src="img/instagram.png"></a>
+					<a href="https:\\www.twitter.com" style="margin-left: 4px"><img id="twitter" width="40px" height="40px" src="img/twitter.png"></a>
+					<a href="https:\\www.facebook.com" style="margin-left: 4px"><img id="facebook"width="40px" height="40px" src="img/facebook.png"></a>
+			</div>
+		</div>
+		<div class="footer-copyright text-center">© 2020 Copyright: clickandeat.com</div>
+	</div>
+</footer>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
